@@ -7,4 +7,7 @@ import okhttp3.WebSocket;
 /**
  * ApiCallback is a functional interface used together with the ApiAsyncClient to provide a non-blocking REST client.
  *
- * @param <T> the return ty
+ * @param <T> the return type from the callback
+ */
+@FunctionalInterface
+public interface ApiCallback<T>
