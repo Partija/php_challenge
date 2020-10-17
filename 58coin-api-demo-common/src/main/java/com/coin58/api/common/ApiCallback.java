@@ -10,4 +10,9 @@ import okhttp3.WebSocket;
  * @param <T> the return type from the callback
  */
 @FunctionalInterface
-public interface ApiCallback<T>
+public interface ApiCallback<T> {
+
+    /**
+     * Called whenever a response comes back from the 58coin API.
+     *
+     * 
