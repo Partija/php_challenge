@@ -20,4 +20,8 @@ public interface ApiCallback<T> {
     void onResponse(T response);
 
     /**
-     * Ca
+     * Called whenever an error occurs.
+     *
+     * @param cause the cause of the failure
+     */
+ 
