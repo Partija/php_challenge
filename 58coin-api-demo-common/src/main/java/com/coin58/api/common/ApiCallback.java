@@ -15,4 +15,9 @@ public interface ApiCallback<T> {
     /**
      * Called whenever a response comes back from the 58coin API.
      *
-     * 
+     * @param response the expected response object
+     */
+    void onResponse(T response);
+
+    /**
+     * Ca
