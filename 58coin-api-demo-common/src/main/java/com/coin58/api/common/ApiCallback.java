@@ -32,4 +32,7 @@ public interface ApiCallback<T> {
     }
 
     /**
-     * Called when the connecti
+     * Called when the connection is closed
+     */
+    default void onClosed(int code, String reason) {
+  
