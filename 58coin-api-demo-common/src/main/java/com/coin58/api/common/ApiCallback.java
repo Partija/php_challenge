@@ -27,4 +27,9 @@ public interface ApiCallback<T> {
     default void onFailure(Throwable cause) {
     }
 
-    default void onClosing(WebSock
+    default void onClosing(WebSocket webSocket, int code, String reason){
+
+    }
+
+    /**
+     * Called when the connecti
