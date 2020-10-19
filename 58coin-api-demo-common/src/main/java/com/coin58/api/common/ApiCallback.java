@@ -35,4 +35,8 @@ public interface ApiCallback<T> {
      * Called when the connection is closed
      */
     default void onClosed(int code, String reason) {
-  
+    }
+
+    default void onConnected(SubMessage message) {
+    }
+}
