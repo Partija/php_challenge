@@ -8,4 +8,7 @@ import okhttp3.ResponseBody;
 import retrofit2.Retrofit;
 
 import java.io.IOException;
-import java.lang.annotation.
+import java.lang.annotation.Annotation;
+import java.lang.reflect.ParameterizedType;
+import java.lang.reflect.Type;
+im
