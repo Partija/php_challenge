@@ -13,4 +13,7 @@ import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
 import java.util.List;
 
-public class ConverterFactory extends retrofit2.Converter.F
+public class ConverterFactory extends retrofit2.Converter.Factory {
+
+    @Override
+    public retrofit2.Converter<ResponseBody, ?> responseBodyC
