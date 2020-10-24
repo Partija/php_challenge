@@ -16,4 +16,5 @@ import java.util.List;
 public class ConverterFactory extends retrofit2.Converter.Factory {
 
     @Override
-    public retrofit2.Converter<ResponseBody, ?> responseBodyC
+    public retrofit2.Converter<ResponseBody, ?> responseBodyConverter(Type type, Annotation[] annotations, Retrofit retrofit) {
+        return new C
