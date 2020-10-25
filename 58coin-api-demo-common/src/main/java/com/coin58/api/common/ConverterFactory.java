@@ -27,4 +27,8 @@ class Converter<T> implements retrofit2.Converter<ResponseBody, T> {
     private Type type;
 
     public Converter(Type type) {
-  
+        this.type = type;
+    }
+
+    @Override
+    public T convert(ResponseBody value) throws IOE
