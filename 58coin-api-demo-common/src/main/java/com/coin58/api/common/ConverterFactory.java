@@ -17,4 +17,9 @@ public class ConverterFactory extends retrofit2.Converter.Factory {
 
     @Override
     public retrofit2.Converter<ResponseBody, ?> responseBodyConverter(Type type, Annotation[] annotations, Retrofit retrofit) {
-        return new C
+        return new Converter(type);
+    }
+}
+
+@Slf4j
+class Converter<T> implements r
