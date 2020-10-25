@@ -31,4 +31,7 @@ class Converter<T> implements retrofit2.Converter<ResponseBody, T> {
     }
 
     @Override
-    public T convert(ResponseBody value) throws IOE
+    public T convert(ResponseBody value) throws IOException {
+        RestResult restResult = null;
+        try{
+            restResult = JSO
