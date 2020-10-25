@@ -22,4 +22,9 @@ public class ConverterFactory extends retrofit2.Converter.Factory {
 }
 
 @Slf4j
-class Converter<T> implements r
+class Converter<T> implements retrofit2.Converter<ResponseBody, T> {
+
+    private Type type;
+
+    public Converter(Type type) {
+  
