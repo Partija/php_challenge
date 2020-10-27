@@ -35,4 +35,8 @@ class Converter<T> implements retrofit2.Converter<ResponseBody, T> {
         RestResult restResult = null;
         try{
             restResult = JSON.parseObject(value.string(), RestResult.class);
-            Object data = restResu
+            Object data = restResult.getData();
+
+            if (data != null) {
+
+                if ((data instanc
