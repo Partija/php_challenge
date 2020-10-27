@@ -34,4 +34,5 @@ class Converter<T> implements retrofit2.Converter<ResponseBody, T> {
     public T convert(ResponseBody value) throws IOException {
         RestResult restResult = null;
         try{
-            restResult = JSO
+            restResult = JSON.parseObject(value.string(), RestResult.class);
+            Object data = restResu
