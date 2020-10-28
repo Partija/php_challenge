@@ -39,4 +39,5 @@ class Converter<T> implements retrofit2.Converter<ResponseBody, T> {
 
             if (data != null) {
 
-                if ((data instanc
+                if ((data instanceof JSONArray) && type instanceof ParameterizedType) {
+                    ParameterizedType pt
