@@ -40,4 +40,5 @@ class Converter<T> implements retrofit2.Converter<ResponseBody, T> {
             if (data != null) {
 
                 if ((data instanceof JSONArray) && type instanceof ParameterizedType) {
-                    ParameterizedType pt
+                    ParameterizedType pt = (ParameterizedType) type;
+                    Type actualType = pt.getActualTypeArg
