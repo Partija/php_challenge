@@ -44,4 +44,5 @@ class Converter<T> implements retrofit2.Converter<ResponseBody, T> {
                     Type actualType = pt.getActualTypeArguments()[0];
 
                     if (pt.getRawType() == List.class) {
-           
+                        JSONArray array = (JSONArray) data;
+                        restResult.
