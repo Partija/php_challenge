@@ -51,4 +51,6 @@ class Converter<T> implements retrofit2.Converter<ResponseBody, T> {
 
                 if (data instanceof JSONObject) {
                     JSONObject jsonObject = (JSONObject) restResult.getData();
-                    restResult.s
+                    restResult.setData(jsonObject.toJavaObject((Class) type));
+                }
+           
