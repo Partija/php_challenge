@@ -49,4 +49,5 @@ class Converter<T> implements retrofit2.Converter<ResponseBody, T> {
                     }
                 }
 
-     
+                if (data instanceof JSONObject) {
+                    JSONObject jsonOb
