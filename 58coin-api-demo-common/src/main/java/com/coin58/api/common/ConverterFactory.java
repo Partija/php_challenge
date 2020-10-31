@@ -55,4 +55,7 @@ class Converter<T> implements retrofit2.Converter<ResponseBody, T> {
                 }
             }
         }catch (Exception e){
-            log.error("[58coin-Converter] response`s bo
+            log.error("[58coin-Converter] response`s body is error,content=" + value.string(), e);
+        }
+
+        return (T) restResult;
