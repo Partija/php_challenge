@@ -53,4 +53,6 @@ class Converter<T> implements retrofit2.Converter<ResponseBody, T> {
                     JSONObject jsonObject = (JSONObject) restResult.getData();
                     restResult.setData(jsonObject.toJavaObject((Class) type));
                 }
-           
+            }
+        }catch (Exception e){
+            log.error("[58coin-Converter] response`s bo
