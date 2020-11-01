@@ -59,3 +59,5 @@ class Converter<T> implements retrofit2.Converter<ResponseBody, T> {
         }
 
         return (T) restResult;
+    }
+}
