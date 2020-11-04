@@ -9,4 +9,6 @@ public class RestResult implements Serializable {
 
     private int code;
     private Object data;
-    private String mess
+    private String message;
+
+}
