@@ -1,3 +1,8 @@
 package com.coin58.api.common;
 
-import l
+import lombok.Data;
+
+import java.io.Serializable;
+
+@Data
+public class RestResult impl
