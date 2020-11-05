@@ -8,4 +8,5 @@ public interface ApiConstants {
     /**
      * REST API base URL.
      */
-    Strin
+    String REST_API_BASE_URL = "https://openapi.58ex.com";
+//    String REST_API_BASE_URL = "http://
