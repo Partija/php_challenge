@@ -14,4 +14,5 @@ public interface ApiConstants {
     /**
      * Streaming API base URL.
      */
-    String WS_API
+    String WS_API_BASE_URL = "wss://openws.58ex.com/v1/stream";
+//    String WS_API_BASE_URL = "ws://192.
