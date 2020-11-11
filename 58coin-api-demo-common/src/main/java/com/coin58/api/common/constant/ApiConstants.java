@@ -15,4 +15,7 @@ public interface ApiConstants {
      * Streaming API base URL.
      */
     String WS_API_BASE_URL = "wss://openws.58ex.com/v1/stream";
-//    String WS_API_BASE_URL = "ws://192.
+//    String WS_API_BASE_URL = "ws://192.168.112.23:9994/v1/stream";
+
+    /**
+     * HTTP Header to be used for API-KEY authe
