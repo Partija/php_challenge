@@ -21,4 +21,6 @@ public interface ApiConstants {
      * HTTP Header to be used for API-KEY authentication.
      */
     String HEADER_API_KEY = "X-58COIN-APIKEY";
-    String ENDPOI
+    String ENDPOINT_HEADER_API_KEY = HEADER_API_KEY + ": #";
+
+    String HEADER_CONTENT_TYPE_J
