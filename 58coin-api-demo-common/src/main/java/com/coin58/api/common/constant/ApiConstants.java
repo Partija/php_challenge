@@ -18,4 +18,7 @@ public interface ApiConstants {
 //    String WS_API_BASE_URL = "ws://192.168.112.23:9994/v1/stream";
 
     /**
-     * HTTP Header to be used for API-KEY authe
+     * HTTP Header to be used for API-KEY authentication.
+     */
+    String HEADER_API_KEY = "X-58COIN-APIKEY";
+    String ENDPOI
