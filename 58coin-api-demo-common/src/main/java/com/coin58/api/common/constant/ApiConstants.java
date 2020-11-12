@@ -23,4 +23,7 @@ public interface ApiConstants {
     String HEADER_API_KEY = "X-58COIN-APIKEY";
     String ENDPOINT_HEADER_API_KEY = HEADER_API_KEY + ": #";
 
-    String HEADER_CONTENT_TYPE_J
+    String HEADER_CONTENT_TYPE_JSON = "Content-Type: application/json";
+
+    String HEADER_TIMESTAMP = "Timestamp";
+    St
