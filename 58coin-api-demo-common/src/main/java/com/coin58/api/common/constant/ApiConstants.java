@@ -29,4 +29,6 @@ public interface ApiConstants {
     String HEADER_SIGNATURE = "Signature";
 
     // 常量
-    String ACCESS_KEY_ID = 
+    String ACCESS_KEY_ID = "AccessKeyId";
+    String SIGNATURE_VERSION = "SignatureVersion";
+    String SIGNATURE_V
