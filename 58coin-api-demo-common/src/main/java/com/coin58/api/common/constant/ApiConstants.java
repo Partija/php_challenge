@@ -31,4 +31,5 @@ public interface ApiConstants {
     // 常量
     String ACCESS_KEY_ID = "AccessKeyId";
     String SIGNATURE_VERSION = "SignatureVersion";
-    String SIGNATURE_V
+    String SIGNATURE_VERSION_VALUE = "2";
+    String SIGNATURE_METHOD = "Signature
