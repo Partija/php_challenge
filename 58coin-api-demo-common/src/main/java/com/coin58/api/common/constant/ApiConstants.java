@@ -26,4 +26,7 @@ public interface ApiConstants {
     String HEADER_CONTENT_TYPE_JSON = "Content-Type: application/json";
 
     String HEADER_TIMESTAMP = "Timestamp";
-    St
+    String HEADER_SIGNATURE = "Signature";
+
+    // 常量
+    String ACCESS_KEY_ID = 
