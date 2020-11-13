@@ -32,4 +32,7 @@ public interface ApiConstants {
     String ACCESS_KEY_ID = "AccessKeyId";
     String SIGNATURE_VERSION = "SignatureVersion";
     String SIGNATURE_VERSION_VALUE = "2";
-    String SIGNATURE_METHOD = "Signature
+    String SIGNATURE_METHOD = "SignatureMethod";
+
+    String HMAC_SHA256 = "HmacSHA256";
+    String UTF_8 = "UTF-
