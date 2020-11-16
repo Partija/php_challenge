@@ -35,4 +35,5 @@ public interface ApiConstants {
     String SIGNATURE_METHOD = "SignatureMethod";
 
     String HMAC_SHA256 = "HmacSHA256";
-    String UTF_8 = "UTF-
+    String UTF_8 = "UTF-8";
+}
