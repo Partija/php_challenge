@@ -15,3 +15,17 @@ public enum KlineIntervalEnum {
     TWO_HOURLY("2hour"),
     FOUR_HOURLY("4hour"),
     SIX_HOURLY("6hour"),
+    TWELVE_HOURLY("12hour"),
+    DAILY("1day"),
+    WEEKLY("1week");
+
+    private final String intervalId;
+
+    KlineIntervalEnum(String intervalId) {
+        this.intervalId = intervalId;
+    }
+
+    public String getIntervalId() {
+        return intervalId;
+    }
+}
