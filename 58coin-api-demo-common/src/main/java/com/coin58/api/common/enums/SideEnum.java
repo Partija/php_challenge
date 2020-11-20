@@ -1,15 +1,13 @@
+
 package com.coin58.api.common.enums;
 
-/**
- * Order type
- */
-public enum OrderTypeEnum {
+public enum SideEnum {
 
-    LIMIT(1), MARKET(2);
+    BUY(1), SELL(2);
 
     int code;
 
-    OrderTypeEnum(int code) {
+    SideEnum(int code) {
         this.code = code;
     }
 
