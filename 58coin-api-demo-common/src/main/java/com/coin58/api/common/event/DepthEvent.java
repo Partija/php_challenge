@@ -7,4 +7,10 @@ public class DepthEvent {
 
     private String type;
     private String product;
-    private Stri
+    private String business;
+    private DepthDto data;
+
+    @Data
+    public static class DepthDto {
+
+        pri
