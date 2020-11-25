@@ -13,4 +13,11 @@ public class DepthEvent {
     @Data
     public static class DepthDto {
 
-        pri
+        private Object[][] bids;
+
+        private Object[][] asks;
+
+    }
+
+
+}
