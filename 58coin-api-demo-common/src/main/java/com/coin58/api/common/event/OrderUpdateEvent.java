@@ -7,4 +7,8 @@ import java.util.List;
 @Data
 public class OrderUpdateEvent {
 
-    private Strin
+    private String type;
+    private String business;
+    private List<OrderDto> data;
+
+    @Data
