@@ -14,4 +14,7 @@ public class OrderUpdateEvent {
     @Data
     public static class OrderDto {
         private String orderId;
-        private Intege
+        private Integer side;
+        private String leverage;
+        private Integer close;
+        private Integer 
