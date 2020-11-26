@@ -12,3 +12,6 @@ public class OrderUpdateEvent {
     private List<OrderDto> data;
 
     @Data
+    public static class OrderDto {
+        private String orderId;
+        private Intege
