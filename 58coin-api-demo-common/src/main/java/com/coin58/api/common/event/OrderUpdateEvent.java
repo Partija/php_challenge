@@ -17,4 +17,7 @@ public class OrderUpdateEvent {
         private Integer side;
         private String leverage;
         private Integer close;
-        private Integer 
+        private Integer type;
+        private Integer status;
+        private Long userId;
+        private String
