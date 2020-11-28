@@ -20,4 +20,6 @@ public class OrderUpdateEvent {
         private Integer type;
         private Integer status;
         private Long userId;
-        private String
+        private String product;
+        private String triggerPrice;
+        private String orderPric
