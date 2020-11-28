@@ -22,4 +22,7 @@ public class OrderUpdateEvent {
         private Long userId;
         private String product;
         private String triggerPrice;
-        private String orderPric
+        private String orderPrice;
+        private String orderSize;
+        private String operationType;
+        private Str
