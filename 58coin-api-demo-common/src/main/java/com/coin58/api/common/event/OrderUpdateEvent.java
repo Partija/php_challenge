@@ -28,4 +28,7 @@ public class OrderUpdateEvent {
         private String fillPrice;
         private String fillSize;
         private String fee;
-        private 
+        private String feeUnit;
+        private String executedSize;
+        private String avgPrice;
+        private St
