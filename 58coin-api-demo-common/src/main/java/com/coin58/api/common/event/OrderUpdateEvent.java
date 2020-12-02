@@ -25,4 +25,7 @@ public class OrderUpdateEvent {
         private String orderPrice;
         private String orderSize;
         private String operationType;
-        private Str
+        private String fillPrice;
+        private String fillSize;
+        private String fee;
+        private 
