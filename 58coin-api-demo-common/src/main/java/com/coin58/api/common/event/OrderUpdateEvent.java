@@ -31,4 +31,9 @@ public class OrderUpdateEvent {
         private String feeUnit;
         private String executedSize;
         private String avgPrice;
-        private St
+        private String operationResult;
+        private String reason;
+
+    }
+
+}
