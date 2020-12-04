@@ -17,4 +17,14 @@ public class SubMessage {
     /**
      * kline ticker
      */
-    p
+    private String type;
+
+    /**
+     * 消息
+     */
+    private String msg;
+
+    /**
+     * 返回码
+     */
+  
