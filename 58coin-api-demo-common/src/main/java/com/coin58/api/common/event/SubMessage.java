@@ -10,4 +10,11 @@ public class SubMessage {
      */
     private String event;
 
-    private Lon
+    private Long ts;
+
+    private String product;
+
+    /**
+     * kline ticker
+     */
+    p
