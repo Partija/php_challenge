@@ -4,3 +4,10 @@ import lombok.Data;
 
 @Data
 public class SubMessage {
+
+    /**
+     * eventEnum
+     */
+    private String event;
+
+    private Lon
