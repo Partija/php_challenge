@@ -27,4 +27,9 @@ public class SubMessage {
     /**
      * 返回码
      */
-  
+    private String code;
+
+    private String business;
+
+
+}
