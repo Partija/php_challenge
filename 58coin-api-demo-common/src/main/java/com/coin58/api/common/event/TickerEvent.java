@@ -1,1 +1,8 @@
-package com.coin58.api.common.e
+package com.coin58.api.common.event;
+
+import lombok.Data;
+
+@Data
+public class TickerEvent {
+
+    pr
