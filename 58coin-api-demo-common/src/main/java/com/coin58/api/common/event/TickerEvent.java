@@ -5,4 +5,7 @@ import lombok.Data;
 @Data
 public class TickerEvent {
 
-    pr
+    private String type;
+    private String product;
+    private String business;
+    private Tick
