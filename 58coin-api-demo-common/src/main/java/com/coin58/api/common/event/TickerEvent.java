@@ -15,4 +15,7 @@ public class TickerEvent {
         private String id;
         private String open;
         private String high;
-        private String lo
+        private String low;
+        private String last;
+        private String sell;
+        private Stri
