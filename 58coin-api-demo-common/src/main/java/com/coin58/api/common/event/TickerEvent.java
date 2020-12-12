@@ -12,4 +12,7 @@ public class TickerEvent {
 
     @Data
     public static class TickerDto {
-        private S
+        private String id;
+        private String open;
+        private String high;
+        private String lo
