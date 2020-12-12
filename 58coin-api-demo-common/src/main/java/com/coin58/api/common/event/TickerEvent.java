@@ -8,4 +8,8 @@ public class TickerEvent {
     private String type;
     private String product;
     private String business;
-    private Tick
+    private TickerDto data;
+
+    @Data
+    public static class TickerDto {
+        private S
