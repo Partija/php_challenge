@@ -21,4 +21,9 @@ public class TickerEvent {
         private String buy;
         private String volume;
         private String amount;
-        private
+        private String product;
+        private String change;
+        private String time;
+    }
+
+}
