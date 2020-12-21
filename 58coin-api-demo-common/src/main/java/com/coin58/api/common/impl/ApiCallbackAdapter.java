@@ -10,4 +10,4 @@ import retrofit2.Response;
 import java.io.IOException;
 
 /**
- * An adapter/wrapper which t
+ * An adapter/wrapper which transforms a Callback from Retrofit into a ApiCallback which is exposed to the client.
