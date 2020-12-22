@@ -16,4 +16,8 @@ public class ApiCallbackAdapter<T> implements Callback<T> {
 
     private final ApiCallback<T> callback;
 
-    public ApiCallbackAdapter(ApiCallback<T> callbac
+    public ApiCallbackAdapter(ApiCallback<T> callback) {
+        this.callback = callback;
+    }
+
+    public void onResponse(Call<T> call, Response<
