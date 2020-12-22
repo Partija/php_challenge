@@ -14,4 +14,6 @@ import java.io.IOException;
  */
 public class ApiCallbackAdapter<T> implements Callback<T> {
 
-    private final ApiCall
+    private final ApiCallback<T> callback;
+
+    public ApiCallbackAdapter(ApiCallback<T> callbac
