@@ -11,3 +11,7 @@ import java.io.IOException;
 
 /**
  * An adapter/wrapper which transforms a Callback from Retrofit into a ApiCallback which is exposed to the client.
+ */
+public class ApiCallbackAdapter<T> implements Callback<T> {
+
+    private final ApiCall
