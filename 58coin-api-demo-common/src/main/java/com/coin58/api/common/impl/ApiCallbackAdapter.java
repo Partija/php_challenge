@@ -20,4 +20,7 @@ public class ApiCallbackAdapter<T> implements Callback<T> {
         this.callback = callback;
     }
 
-    public void onResponse(Call<T> call, Response<
+    public void onResponse(Call<T> call, Response<T> response) {
+        if (response.isSuccessful()) {
+
+            RestResult restResult
