@@ -26,4 +26,5 @@ public class ApiCallbackAdapter<T> implements Callback<T> {
             RestResult restResult = (RestResult) response.body();
 
             if (restResult.getCode() != 0) {
-         
+                onFailure(call, new ApiException(restResult.getMessage()));
+                r
