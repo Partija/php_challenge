@@ -23,4 +23,7 @@ public class ApiCallbackAdapter<T> implements Callback<T> {
     public void onResponse(Call<T> call, Response<T> response) {
         if (response.isSuccessful()) {
 
-            RestResult restResult
+            RestResult restResult = (RestResult) response.body();
+
+            if (restResult.getCode() != 0) {
+         
