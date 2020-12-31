@@ -31,4 +31,6 @@ public class ApiCallbackAdapter<T> implements Callback<T> {
             }
 
             callback.onResponse((T) restResult.getData());
-  
+        } else {
+            if (response.code() == 504) {
+                // HTTP 504 return cod
