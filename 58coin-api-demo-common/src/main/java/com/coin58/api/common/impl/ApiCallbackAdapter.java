@@ -33,4 +33,4 @@ public class ApiCallbackAdapter<T> implements Callback<T> {
             callback.onResponse((T) restResult.getData());
         } else {
             if (response.code() == 504) {
-                // HTTP 504 return cod
+                // HTTP 504 return code is used when the API successfully sent the message but not get a response within th
