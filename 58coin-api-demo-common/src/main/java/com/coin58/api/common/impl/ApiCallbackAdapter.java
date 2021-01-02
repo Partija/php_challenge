@@ -36,4 +36,7 @@ public class ApiCallbackAdapter<T> implements Callback<T> {
                 // HTTP 504 return code is used when the API successfully sent the message but not get a response within the timeout period.
                 // It is important to NOT treat this as a failure; the execution status is UNKNOWN and could have been a success.
                 return;
-  
+            }
+
+            try {
+                RestResult apiError = ApiServiceGenerato
