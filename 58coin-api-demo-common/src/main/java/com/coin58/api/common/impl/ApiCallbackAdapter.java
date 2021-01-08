@@ -42,4 +42,10 @@ public class ApiCallbackAdapter<T> implements Callback<T> {
                 RestResult apiError = ApiServiceGenerator.getApiError(response);
                 onFailure(call, new ApiException(apiError.getMessage()));
             } catch (IOException e) {
-                onFailure(call, new ApiExcept
+                onFailure(call, new ApiException(e));
+            }
+        }
+    }
+
+    @Override
+    public void onFailure(Call<
