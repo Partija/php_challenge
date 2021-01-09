@@ -53,4 +53,6 @@ public class ApiCallbackAdapter<T> implements Callback<T> {
             callback.onFailure(throwable);
         } else {
             callback.onFailure(new ApiException(throwable));
-     
+        }
+    }
+}
