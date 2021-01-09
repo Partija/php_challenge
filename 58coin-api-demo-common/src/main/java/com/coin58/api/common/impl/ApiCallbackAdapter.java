@@ -50,4 +50,7 @@ public class ApiCallbackAdapter<T> implements Callback<T> {
     @Override
     public void onFailure(Call<T> call, Throwable throwable) {
         if (throwable instanceof ApiException) {
-            callback.o
+            callback.onFailure(throwable);
+        } else {
+            callback.onFailure(new ApiException(throwable));
+     
