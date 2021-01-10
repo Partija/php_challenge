@@ -54,3 +54,59 @@ public class ApiServiceGenerator {
 
         if (StringUtils.isEmpty(apiKey) || StringUtils.isEmpty(secret)) {
             retrofitBuilder.client(sharedClient);
+        } else {
+            // `adaptedClient` will use its own interceptor, but share thread pool etc with the 'parent' client
+            AuthenticationInterceptor interceptor = new AuthenticationInterceptor(apiKey, secret);
+            OkHttpClient adaptedClient = sharedClient.newBuilder().addInterceptor(interceptor).build();
+            retrofitBuilder.client(adaptedClient);
+        }
+
+        Retrofit retrofit = retrofitBuilder.build();
+        return retrofit.create(serviceClass);
+    }
+    /**
+     * Execute a REST call and block until the response is received.
+     */
+    public static <T> T executeSync(Call<T> call) {
+        try {
+            Response<T> response = call.execute();
+
+            if (!response.isSuccessful()) {
+                int code = response.code();
+                RestResult restResult = JSON.parseObject(response.errorBody().string(), RestResult.class);
+                if (restResult != null) {
+                    throw new ApiException(restResult.getMessage());
+                }
+
+                throw new ApiException(HttpStatusEnum.of(code).getMessage());
+            }
+
+            RestResult restResult = (RestResult) response.body();
+            if (restResult == null) {
+                return null;
+            }
+
+            if (restResult.getCode() != 0) {
+                throw new ApiException(restResult.getMessage());
+            }
+
+            return (T) restResult.getData();
+        } catch (IOException e) {
+            throw new ApiException(e);
+        }
+    }
+
+    /**
+     * Extracts and converts the response error body into an object.
+     */
+    public static RestResult getApiError(Response<?> response) throws IOException, ApiException {
+        return errorBodyConverter.convert(response.errorBody());
+    }
+
+    /**
+     * Returns the shared OkHttpClient instance.
+     */
+    public static OkHttpClient getSharedClient() {
+        return sharedClient;
+    }
+}
