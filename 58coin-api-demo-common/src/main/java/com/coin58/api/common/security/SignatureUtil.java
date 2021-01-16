@@ -101,3 +101,10 @@ public class SignatureUtil {
      * @return URL encoded string
      */
     public static String urlEncode(String s) {
+        try {
+            return URLEncoder.encode(s, ApiConstants.UTF_8).replaceAll("\\+", "%20");
+        } catch (UnsupportedEncodingException e) {
+            throw new IllegalArgumentException("UTF-8 encoding not supported!");
+        }
+    }
+}
