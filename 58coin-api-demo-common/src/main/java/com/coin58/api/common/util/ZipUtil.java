@@ -8,4 +8,6 @@ import java.util.zip.Inflater;
 public class ZipUtil {
 
     public static String uncompress(byte[] input) throws IOException {
-        Inflat
+        Inflater inflater = new Inflater(true);
+        inflater.setInput(input);
+        Byt
