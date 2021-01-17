@@ -10,4 +10,5 @@ public class ZipUtil {
     public static String uncompress(byte[] input) throws IOException {
         Inflater inflater = new Inflater(true);
         inflater.setInput(input);
-        Byt
+        ByteArrayOutputStream baos = new ByteArrayOutputStream(input.length);
+        try 
