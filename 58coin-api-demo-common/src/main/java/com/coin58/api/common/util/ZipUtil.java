@@ -15,4 +15,7 @@ public class ZipUtil {
             byte[] buff = new byte[1024];
             while (!inflater.finished()) {
                 int count = inflater.inflate(buff);
-                b
+                baos.write(buff, 0, count);
+            }
+        } catch (Exception e) {
+            e.print
