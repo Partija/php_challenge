@@ -11,4 +11,8 @@ public class ZipUtil {
         Inflater inflater = new Inflater(true);
         inflater.setInput(input);
         ByteArrayOutputStream baos = new ByteArrayOutputStream(input.length);
-        try 
+        try {
+            byte[] buff = new byte[1024];
+            while (!inflater.finished()) {
+                int count = inflater.inflate(buff);
+                b
