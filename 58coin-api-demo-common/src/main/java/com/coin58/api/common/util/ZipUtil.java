@@ -18,4 +18,8 @@ public class ZipUtil {
                 baos.write(buff, 0, count);
             }
         } catch (Exception e) {
-            e.print
+            e.printStackTrace();
+        } finally {
+            baos.close();
+        }
+        inflater
