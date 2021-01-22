@@ -24,4 +24,7 @@ public class ZipUtil {
         }
         inflater.end();
         byte[] output = baos.toByteArray();
-        return new String(output, 
+        return new String(output, "UTF-8");
+    }
+
+}
