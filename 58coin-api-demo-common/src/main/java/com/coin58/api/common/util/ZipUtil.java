@@ -22,4 +22,6 @@ public class ZipUtil {
         } finally {
             baos.close();
         }
-        inflater
+        inflater.end();
+        byte[] output = baos.toByteArray();
+        return new String(output, 
