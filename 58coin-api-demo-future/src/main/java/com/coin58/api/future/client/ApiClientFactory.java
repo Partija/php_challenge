@@ -7,4 +7,10 @@ import com.coin58.api.common.impl.ApiSocketClientImpl;
 import com.coin58.api.future.client.impl.ApiRestClientImpl;
 
 /**
- * A factory for creating 58coin Api cli
+ * A factory for creating 58coin Api client objects.
+ */
+public class ApiClientFactory {
+
+    private String apiKey;
+
+    p
