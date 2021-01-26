@@ -17,4 +17,7 @@ public class ApiClientFactory {
 
     private ApiClientFactory(String apiKey, String apiSecret) {
         this.apiKey = apiKey;
-        this.apiSecret = apiSe
+        this.apiSecret = apiSecret;
+    }
+
+    public static ApiClientFactory newInstance(String apiKey, St
