@@ -24,4 +24,8 @@ public class ApiClientFactory {
         return new ApiClientFactory(apiKey, apiSecret);
     }
 
-    public static Ap
+    public static ApiClientFactory newInstance() {
+        return new ApiClientFactory(null, null);
+    }
+
+    
