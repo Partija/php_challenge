@@ -29,4 +29,8 @@ public class ApiClientFactory {
     }
 
     public ApiRestClient newRestClient() {
-        return new ApiRestClientImpl(apiKey,
+        return new ApiRestClientImpl(apiKey, apiSecret);
+    }
+
+    public ApiRestClient newRestClient(String restUrl) {
+       
