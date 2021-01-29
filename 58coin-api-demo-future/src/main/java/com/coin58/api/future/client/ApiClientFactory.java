@@ -33,4 +33,7 @@ public class ApiClientFactory {
     }
 
     public ApiRestClient newRestClient(String restUrl) {
-       
+        return new ApiRestClientImpl(apiKey, apiSecret, restUrl);
+    }
+
+    public ApiSocketClient
