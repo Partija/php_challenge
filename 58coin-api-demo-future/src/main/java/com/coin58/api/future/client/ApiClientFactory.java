@@ -28,4 +28,5 @@ public class ApiClientFactory {
         return new ApiClientFactory(null, null);
     }
 
-    
+    public ApiRestClient newRestClient() {
+        return new ApiRestClientImpl(apiKey,
