@@ -41,4 +41,4 @@ public class ApiClientFactory {
     }
 
     public ApiSocketClient newWebSocketClient(String socketUrl) {
-        return new ApiSoc
+        return new ApiSocketClientImpl(this.apiKey, this.apiSecret, ApiServiceGenerator.getSharedClient(), s
