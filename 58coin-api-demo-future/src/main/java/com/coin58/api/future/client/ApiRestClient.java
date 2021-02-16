@@ -11,4 +11,6 @@ import java.util.List;
  */
 public interface ApiRestClient {
 
-    JSONObject transfer(String
+    JSONObject transfer(String currencyName, Integer triggerSiteId, Integer targetSiteId, String amount);
+
+    Li
