@@ -16,3 +16,7 @@ public interface ApiRestClient {
     List<AssetsResponse> getAssets(int siteId);
 
     List<Contract> getContractList();
+
+    List<KlineResponse> getKline(Long contractId, Integer type, Long since);
+
+    TickerResponse getTicker(long
