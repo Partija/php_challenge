@@ -19,4 +19,8 @@ public interface ApiRestClient {
 
     List<KlineResponse> getKline(Long contractId, Integer type, Long since);
 
-    TickerResponse getTicker(long
+    TickerResponse getTicker(long contractId);
+
+    DepthResponse getDepth(Long contractId);
+
+    AssetRespo
