@@ -35,4 +35,8 @@ public interface ApiRestClient {
 
     List<OrderListResponse> getOrderList(String contractIds, Integer side, Integer close);
 
-    List<FillListResponse> getFillList(String contractIds, Integer c
+    List<FillListResponse> getFillList(String contractIds, Integer close, Integer limit);
+
+    JSONObject getPositionList(String contractIds);
+
+    JSONObject 
