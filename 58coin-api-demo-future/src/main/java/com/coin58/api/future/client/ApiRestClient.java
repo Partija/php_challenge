@@ -39,4 +39,8 @@ public interface ApiRestClient {
 
     JSONObject getPositionList(String contractIds);
 
-    JSONObject 
+    JSONObject newPlanOrder(NewPlanOrder planOrder);
+
+    JSONObject cancelPlan(long planId);
+
+    JSONObject c
