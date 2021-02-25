@@ -46,3 +46,10 @@ public interface ApiRestClient {
     JSONObject cancelPlanBatch(Long contractId);
 
     List<PlanListResponse> getPlanList(String contractIds, Integer limit);
+
+    /**
+     * 获取账单信息
+     * @param action
+     * @param startDate
+     * @param endDate
+ 
