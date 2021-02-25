@@ -43,4 +43,6 @@ public interface ApiRestClient {
 
     JSONObject cancelPlan(long planId);
 
-    JSONObject c
+    JSONObject cancelPlanBatch(Long contractId);
+
+    List<PlanListResponse> getPlanList(String contractIds, Integer limit);
