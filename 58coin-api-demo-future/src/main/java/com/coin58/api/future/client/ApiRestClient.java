@@ -55,4 +55,4 @@ public interface ApiRestClient {
      * @param curPage
      * @return
      */
-    List<LedgerResponse> getLedgerList(
+    List<LedgerResponse> getLedgerList(Integer action, Long startDate, Long endDate, Integer curPage, Integer pa
