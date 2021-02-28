@@ -62,4 +62,5 @@ public interface ApiRestClient {
      * @param orderId
      * @return
      */
-    Fini
+    FinishOrderResponse getFinishOrder(long orderId);
+}
