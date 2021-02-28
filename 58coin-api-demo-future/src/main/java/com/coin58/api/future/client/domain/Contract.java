@@ -42,3 +42,9 @@ public class Contract {
                 ", intervalHour=" + intervalHour + //
                 ", settlementBeginHour=" + settlementBeginHour + //
                 ", maxOrderSize=" + maxOrderSize + //
+                ", maxOrderQuantity=" + maxOrderQuantity + //
+                ", limitPrizeOffsetRate=" + limitPrizeOffsetRate + //
+                ", deliverDate=" + deliverDate + //
+                '}';
+    }
+}
