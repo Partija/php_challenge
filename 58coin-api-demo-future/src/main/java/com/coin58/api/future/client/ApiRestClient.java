@@ -55,4 +55,11 @@ public interface ApiRestClient {
      * @param curPage
      * @return
      */
-    List<LedgerResponse> getLedgerList(Integer action, Long startDate, Long endDate, Integer curPage, Integer pa
+    List<LedgerResponse> getLedgerList(Integer action, Long startDate, Long endDate, Integer curPage, Integer pageSize);
+
+    /**
+     * 获取已完成订单的信息
+     * @param orderId
+     * @return
+     */
+    Fini
