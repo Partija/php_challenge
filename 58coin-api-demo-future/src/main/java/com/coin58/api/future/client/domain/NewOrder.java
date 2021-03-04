@@ -9,3 +9,7 @@ import java.math.BigDecimal;
 
 @Data
 public class NewOrder {
+
+    private long contractId;
+    private OrderTypeEnum orderType;
+    private Sid
