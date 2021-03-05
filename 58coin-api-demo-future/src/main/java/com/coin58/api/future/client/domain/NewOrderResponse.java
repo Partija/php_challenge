@@ -2,4 +2,9 @@ package com.coin58.api.future.client.domain;
 
 import lombok.Data;
 
-im
+import java.io.Serializable;
+
+@Data
+public class NewOrderResponse implements Serializable {
+
+    p
