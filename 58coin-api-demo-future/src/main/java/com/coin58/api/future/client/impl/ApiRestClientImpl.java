@@ -61,3 +61,81 @@ public class ApiRestClientImpl implements ApiRestClient {
     @Override
     public NewOrderResponse newOrder(NewOrder order) {
         return ApiServiceGenerator.executeSync(apiService.newOrder(order.getContractId(), order.getOrderType().getCode(), order.getSide().getCode(), order.getLeverage(), order.getSize(),
+                order.getPrice(), order.getCloseType().getCode()));
+    }
+
+    @Override
+    public JSONObject cancelOrder(long orderId) {
+        return ApiServiceGenerator.executeSync(apiService.cancelOrder(orderId));
+    }
+
+    @Override
+    public JSONObject cancelOrderBatch(Long contractId) {
+        return ApiServiceGenerator.executeSync(apiService.cancelOrderBatch(contractId));
+    }
+
+    @Override
+    public JSONObject closeAll() {
+        return ApiServiceGenerator.executeSync(apiService.closeAll());
+    }
+
+    @Override
+    public List<OrderListResponse> getOrderList(String contractIds, Integer side, Integer close) {
+        return ApiServiceGenerator.executeSync(apiService.getOrderList(contractIds, side, close));
+    }
+
+    @Override
+    public List<FillListResponse> getFillList(String contractIds, Integer close, Integer limit) {
+        return ApiServiceGenerator.executeSync(apiService.getFillList(contractIds, close, limit));
+    }
+
+    @Override
+    public JSONObject getPositionList(String contractIds) {
+        return ApiServiceGenerator.executeSync(apiService.getPositionList(contractIds));
+    }
+
+    @Override
+    public JSONObject newPlanOrder(NewPlanOrder planOrder) {
+        return ApiServiceGenerator.executeSync(
+                apiService.newPlanOrder(planOrder.getContractId(), planOrder.getSide(), planOrder.getTriggerPrice(), planOrder.getSize(), planOrder.getMode(), planOrder.getType(), planOrder.getPrice()));
+    }
+
+    @Override
+    public JSONObject cancelPlan(long planId) {
+        return ApiServiceGenerator.executeSync(apiService.cancelPlan(planId));
+    }
+
+    @Override
+    public JSONObject cancelPlanBatch(Long contractId) {
+        return ApiServiceGenerator.executeSync(apiService.cancelPlanBatch(contractId));
+    }
+
+    @Override
+    public List<PlanListResponse> getPlanList(String contractIds, Integer limit) {
+        return ApiServiceGenerator.executeSync(apiService.getPlanList(contractIds, limit));
+    }
+
+    /**
+     * 获取账单信息
+     * @param action
+     * @param startDate
+     * @param endDate
+     * @param curPage
+     * @return
+     */
+    @Override
+    public List<LedgerResponse> getLedgerList(Integer action,  Long startDate, Long endDate, Integer curPage, Integer pageSize) {
+        return ApiServiceGenerator.executeSync(apiService.getLedgerList(action,startDate,endDate,curPage, pageSize));
+    }
+
+
+    /**
+     * 获取已完成订单的状态
+     * @param orderId
+     * @return
+     */
+    @Override
+    public FinishOrderResponse getFinishOrder(long orderId) {
+        return ApiServiceGenerator.executeSync(apiService.getFinishOrder(orderId));
+    }
+}
