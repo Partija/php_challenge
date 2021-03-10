@@ -7,4 +7,9 @@ import retrofit2.Call;
 import retrofit2.http.*;
 
 import java.math.BigDecimal;
-import java.uti
+import java.util.List;
+
+/**
+ * 58coin's REST API URL mappings and endpoint security configuration.
+ */
+public interfac
