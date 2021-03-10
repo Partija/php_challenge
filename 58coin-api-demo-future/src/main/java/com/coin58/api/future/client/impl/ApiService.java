@@ -16,4 +16,5 @@ public interface ApiService {
 
     @FormUrlEncoded
     @Headers(ApiConstants.ENDPOINT_HEADER_API_KEY)
-    @PO
+    @POST("/v1/account/transfer/request")
+    Call<JSONObject> transfer(@Field("currencyNam
