@@ -12,4 +12,8 @@ import java.util.List;
 /**
  * 58coin's REST API URL mappings and endpoint security configuration.
  */
-public interfac
+public interface ApiService {
+
+    @FormUrlEncoded
+    @Headers(ApiConstants.ENDPOINT_HEADER_API_KEY)
+    @PO
