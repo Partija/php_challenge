@@ -17,4 +17,4 @@ public interface ApiService {
     @FormUrlEncoded
     @Headers(ApiConstants.ENDPOINT_HEADER_API_KEY)
     @POST("/v1/account/transfer/request")
-    Call<JSONObject> transfer(@Field("currencyNam
+    Call<JSONObject> transfer(@Field("currencyName") String currencyName, @Field("triggerSiteId") Integer triggerSiteId, @Field("targetSiteId") Inte
