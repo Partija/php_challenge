@@ -21,4 +21,7 @@ public interface ApiService {
 
     @Headers({ApiConstants.HEADER_CONTENT_TYPE_JSON, ApiConstants.ENDPOINT_HEADER_API_KEY})
     @GET("/v1/account/assets/sites")
-    Call<List<AssetsResponse>> getAssets(@Query("
+    Call<List<AssetsResponse>> getAssets(@Query("siteId") int siteId);
+
+    @Headers(ApiConstants.HEADER_CONTENT_TYPE_JSON)
+    @GET("/v1/us
