@@ -29,4 +29,4 @@ public interface ApiService {
 
     @Headers(ApiConstants.HEADER_CONTENT_TYPE_JSON)
     @GET("/v1/usdt/market/kline")
- 
+    Call<List<KlineResponse>> getKline(@Query("contractId") Long contractId, @Quer
