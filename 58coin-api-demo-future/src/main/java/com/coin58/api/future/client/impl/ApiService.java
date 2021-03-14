@@ -24,4 +24,7 @@ public interface ApiService {
     Call<List<AssetsResponse>> getAssets(@Query("siteId") int siteId);
 
     @Headers(ApiConstants.HEADER_CONTENT_TYPE_JSON)
-    @GET("/v1/us
+    @GET("/v1/usdt/contract/list")
+    Call<List<Contract>> getContractList();
+
+    @Headers
