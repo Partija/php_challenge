@@ -33,4 +33,6 @@ public interface ApiService {
 
     @Headers(ApiConstants.HEADER_CONTENT_TYPE_JSON)
     @GET("/v1/usdt/market/ticker")
-    Call<TickerResponse> getTickerList(@Quer
+    Call<TickerResponse> getTickerList(@Query("contractId") long contraceId);
+
+    @Headers(ApiConstants.HEADER_CONTENT_TYPE_
