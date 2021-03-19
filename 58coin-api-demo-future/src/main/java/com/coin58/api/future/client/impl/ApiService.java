@@ -31,4 +31,6 @@ public interface ApiService {
     @GET("/v1/usdt/market/kline")
     Call<List<KlineResponse>> getKline(@Query("contractId") Long contractId, @Query("type") Integer type, @Query("since") Long since);
 
-    @Headers(ApiConstants.HEADER_CONTENT_TYPE_
+    @Headers(ApiConstants.HEADER_CONTENT_TYPE_JSON)
+    @GET("/v1/usdt/market/ticker")
+    Call<TickerResponse> getTickerList(@Quer
