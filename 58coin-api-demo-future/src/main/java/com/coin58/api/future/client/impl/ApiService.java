@@ -39,4 +39,8 @@ public interface ApiService {
     @GET("/v1/usdt/market/depth")
     Call<DepthResponse> getDepth(@Query("contractId") long contractId);
 
-    @Headers({ApiConstants.HEADER_CONTENT_TYPE_JSON, ApiConstants.ENDPOINT_HEADER_
+    @Headers({ApiConstants.HEADER_CONTENT_TYPE_JSON, ApiConstants.ENDPOINT_HEADER_API_KEY})
+    @GET("/v1/usdt/account/asset")
+    Call<AssetResponse> getAsset();
+
+ 
