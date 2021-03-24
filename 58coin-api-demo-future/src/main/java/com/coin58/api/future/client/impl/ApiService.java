@@ -43,4 +43,6 @@ public interface ApiService {
     @GET("/v1/usdt/account/asset")
     Call<AssetResponse> getAsset();
 
- 
+    @FormUrlEncoded
+    @Headers(ApiConstants.ENDPOINT_HEADER_API_KEY)
+    @POST("/v1/u
