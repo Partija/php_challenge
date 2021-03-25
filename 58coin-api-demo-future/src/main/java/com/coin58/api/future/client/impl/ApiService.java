@@ -48,4 +48,6 @@ public interface ApiService {
     @POST("/v1/usdt/order/place")
     Call<NewOrderResponse> newOrder(@Field("contractId") long contractId, @Field("type") Integer type, @Field("side") Integer side,
                                     @Field("leverage") Integer leverage, @Field("size") Integer size,
-               
+                                    @Field("price") BigDecimal price, @Field("close") Integer close);
+
+    
