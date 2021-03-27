@@ -50,4 +50,6 @@ public interface ApiService {
                                     @Field("leverage") Integer leverage, @Field("size") Integer size,
                                     @Field("price") BigDecimal price, @Field("close") Integer close);
 
-    
+    @FormUrlEncoded
+    @Headers(ApiConstants.ENDPOINT_HEADER_API_KEY)
+    @POST("/v1/usdt/order/can
