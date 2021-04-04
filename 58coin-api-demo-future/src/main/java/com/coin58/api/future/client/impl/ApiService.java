@@ -60,4 +60,5 @@ public interface ApiService {
     @POST("/v1/usdt/order/cancel/batch")
     Call<JSONObject> cancelOrderBatch(@Field("contractId") Long contractId);
 
-  
+    @Headers({ApiConstants.HEADER_CONTENT_TYPE_JSON, ApiConstants.ENDPOINT_HEADER_API_KEY})
+ 
