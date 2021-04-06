@@ -64,4 +64,6 @@ public interface ApiService {
     @POST("/v1/usdt/order/close/all")
     Call<JSONObject> closeAll();
 
-    @Headers({Api
+    @Headers({ApiConstants.HEADER_CONTENT_TYPE_JSON, ApiConstants.ENDPOINT_HEADER_API_KEY})
+    @GET("/v1/usdt/order/list")
+   
