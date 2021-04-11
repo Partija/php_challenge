@@ -70,4 +70,5 @@ public interface ApiService {
                                                @Query("close") Integer close);
 
     @Headers({ApiConstants.HEADER_CONTENT_TYPE_JSON, ApiConstants.ENDPOINT_HEADER_API_KEY})
-    @GET("/v1/usdt/order/fill/l
+    @GET("/v1/usdt/order/fill/list")
+    Call<List<FillListResponse>> getFillList(@Query("contractIds") String contractI
