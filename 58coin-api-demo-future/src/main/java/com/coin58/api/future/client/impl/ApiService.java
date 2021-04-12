@@ -78,4 +78,6 @@ public interface ApiService {
     @GET("/v1/usdt/order/finish")
     Call<FinishOrderResponse> getFinishOrder(@Query("orderId") long orderId);
 
-    @Headers({ApiConstants.HEADER_CONTENT_TYP
+    @Headers({ApiConstants.HEADER_CONTENT_TYPE_JSON, ApiConstants.ENDPOINT_HEADER_API_KEY})
+    @GET("/v1/usdt/position/list")
+    Call<JSONObject
