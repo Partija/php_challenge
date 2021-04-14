@@ -83,3 +83,5 @@ public interface ApiService {
     Call<JSONObject> getPositionList(@Query("contractIds") String contractIds);
 
     @FormUrlEncoded
+    @Headers(ApiConstants.ENDPOINT_HEADER_API_KEY)
+    @POST("/v1/usdt/
