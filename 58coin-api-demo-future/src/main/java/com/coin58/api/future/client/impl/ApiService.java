@@ -84,4 +84,5 @@ public interface ApiService {
 
     @FormUrlEncoded
     @Headers(ApiConstants.ENDPOINT_HEADER_API_KEY)
-    @POST("/v1/usdt/
+    @POST("/v1/usdt/order/plan/close")
+    Call<JSONObject> newPlanOrder(@Field("contractId") long contractId, @Field(
