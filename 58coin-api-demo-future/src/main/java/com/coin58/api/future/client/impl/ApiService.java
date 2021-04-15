@@ -87,4 +87,5 @@ public interface ApiService {
     @POST("/v1/usdt/order/plan/close")
     Call<JSONObject> newPlanOrder(@Field("contractId") long contractId, @Field("side") Integer side,
                                   @Field("triggerPrice") String triggerPrice, @Field("size") Integer size,
-                                  @Field("mode") Integer mod
+                                  @Field("mode") Integer mode,
+                                  @Field("type") Integer type, @Field("price") String p
