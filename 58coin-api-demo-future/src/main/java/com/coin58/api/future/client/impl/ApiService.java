@@ -86,4 +86,5 @@ public interface ApiService {
     @Headers(ApiConstants.ENDPOINT_HEADER_API_KEY)
     @POST("/v1/usdt/order/plan/close")
     Call<JSONObject> newPlanOrder(@Field("contractId") long contractId, @Field("side") Integer side,
-                                  @Field("triggerPrice") String triggerPrice,
+                                  @Field("triggerPrice") String triggerPrice, @Field("size") Integer size,
+                                  @Field("mode") Integer mod
