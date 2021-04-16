@@ -88,4 +88,7 @@ public interface ApiService {
     Call<JSONObject> newPlanOrder(@Field("contractId") long contractId, @Field("side") Integer side,
                                   @Field("triggerPrice") String triggerPrice, @Field("size") Integer size,
                                   @Field("mode") Integer mode,
-                                  @Field("type") Integer type, @Field("price") String p
+                                  @Field("type") Integer type, @Field("price") String price);
+
+    @FormUrlEncoded
+    @Headers(ApiConstants.ENDPOINT_HEADER_
