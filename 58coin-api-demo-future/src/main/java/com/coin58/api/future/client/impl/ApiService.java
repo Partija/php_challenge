@@ -91,4 +91,6 @@ public interface ApiService {
                                   @Field("type") Integer type, @Field("price") String price);
 
     @FormUrlEncoded
-    @Headers(ApiConstants.ENDPOINT_HEADER_
+    @Headers(ApiConstants.ENDPOINT_HEADER_API_KEY)
+    @POST("/v1/usdt/order/plan/cancel")
+    Call<JSONObject> cancelPlan(@Field("planI
