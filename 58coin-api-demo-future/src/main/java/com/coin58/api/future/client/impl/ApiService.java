@@ -105,4 +105,6 @@ public interface ApiService {
     Call<List<PlanListResponse>> getPlanList(@Query("contractIds") String contractIds, @Query("limit") Integer limit);
 
 
-    @Headers({ApiConstants.HEADER_CONTENT_TYPE_JSON, ApiConstants.ENDPOI
+    @Headers({ApiConstants.HEADER_CONTENT_TYPE_JSON, ApiConstants.ENDPOINT_HEADER_API_KEY})
+    @GET("/v1/usdt/ledger/list")
+    Call<List<LedgerResponse>> ge
