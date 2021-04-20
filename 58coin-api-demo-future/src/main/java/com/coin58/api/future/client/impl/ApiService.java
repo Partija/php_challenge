@@ -102,4 +102,7 @@ public interface ApiService {
 
     @Headers({ApiConstants.HEADER_CONTENT_TYPE_JSON, ApiConstants.ENDPOINT_HEADER_API_KEY})
     @GET("/v1/usdt/order/plan/list")
-    Call<List<PlanListResponse>> getPlanList(@Query("contractIds") String contractIds, @Query("limit") 
+    Call<List<PlanListResponse>> getPlanList(@Query("contractIds") String contractIds, @Query("limit") Integer limit);
+
+
+    @Headers({ApiConstants.HEADER_CONTENT_TYPE_JSON, ApiConstants.ENDPOI
