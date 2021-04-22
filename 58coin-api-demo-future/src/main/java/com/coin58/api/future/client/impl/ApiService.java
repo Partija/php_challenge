@@ -109,4 +109,6 @@ public interface ApiService {
     @GET("/v1/usdt/ledger/list")
     Call<List<LedgerResponse>> getLedgerList( @Query("action") Integer action,
                                              @Query("startDate") Long startDate, @Query("endDate") Long endDate,
-                                             @Query("curPage") Integer curPage, @Query("pageSize") Integer pageSize
+                                             @Query("curPage") Integer curPage, @Query("pageSize") Integer pageSize);
+
+}
