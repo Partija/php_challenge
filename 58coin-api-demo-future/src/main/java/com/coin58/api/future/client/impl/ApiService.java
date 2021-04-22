@@ -108,4 +108,5 @@ public interface ApiService {
     @Headers({ApiConstants.HEADER_CONTENT_TYPE_JSON, ApiConstants.ENDPOINT_HEADER_API_KEY})
     @GET("/v1/usdt/ledger/list")
     Call<List<LedgerResponse>> getLedgerList( @Query("action") Integer action,
-                                        
+                                             @Query("startDate") Long startDate, @Query("endDate") Long endDate,
+                     
