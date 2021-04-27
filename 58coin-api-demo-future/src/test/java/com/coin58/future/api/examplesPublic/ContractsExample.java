@@ -23,4 +23,7 @@ public class ContractsExample {
         List<Contract> contracts = client.getContractList();
 
         contracts.forEach(contract -> {
-            System.out.println(contract)
+            System.out.println(contract);
+        });
+    }
+}
