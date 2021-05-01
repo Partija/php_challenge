@@ -240,3 +240,15 @@ public class SocketExample {
                 System.out.println("webSocket = [" + webSocket + "], t = [" + t + "], response = [" + response + "]");
                 latch.countDown();
             }
+
+            @Override
+            public void onClosed(WebSocket webSocket, int code, String reason) {
+                System.out.println("webSocket = [" + webSocket + "], code = [" + code + "], reason = [" + reason + "]");
+            }
+
+        });
+
+        latch.await();
+
+    }
+}
