@@ -13,4 +13,6 @@ public class ApiClientFactory {
 
     private String apiKey;
 
-    private String apiS
+    private String apiSecret;
+
+    private ApiClientFactory(String apiKey, String apiSecret)
