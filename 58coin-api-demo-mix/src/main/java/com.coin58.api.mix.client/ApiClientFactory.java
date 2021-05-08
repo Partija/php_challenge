@@ -21,4 +21,7 @@ public class ApiClientFactory {
     }
 
     public static ApiClientFactory newInstance(String apiKey, String apiSecret) {
-        return n
+        return new ApiClientFactory(apiKey, apiSecret);
+    }
+
+    public static ApiClientFactory newInstance
