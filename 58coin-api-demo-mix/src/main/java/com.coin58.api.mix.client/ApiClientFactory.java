@@ -20,4 +20,5 @@ public class ApiClientFactory {
         this.apiSecret = apiSecret;
     }
 
-    p
+    public static ApiClientFactory newInstance(String apiKey, String apiSecret) {
+        return n
