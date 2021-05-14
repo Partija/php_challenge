@@ -36,4 +36,5 @@ public class ApiClientFactory {
         return new ApiRestClientImpl(apiKey, apiSecret, restUrl);
     }
 
-    public ApiSocketClient newWebSock
+    public ApiSocketClient newWebSocketClient() {
+        return new ApiSocketClientImpl(this.apiKey, this.apiSecret, ApiServi
