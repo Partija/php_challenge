@@ -14,4 +14,6 @@ import java.util.List;
  */
 public interface ApiRestClient {
 
-    List<TradeRes
+    List<TradeResponse> getTrades(long contraceId);
+
+    List<Contract> getContractList();
