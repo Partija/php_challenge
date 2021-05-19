@@ -10,4 +10,8 @@ import com.coin58.api.mix.client.domain.DepthResponse;
 import java.util.List;
 
 /**
- * 58coin API façade, supporting synchronous/bloc
+ * 58coin API façade, supporting synchronous/blocking access 58coin's REST API.
+ */
+public interface ApiRestClient {
+
+    List<TradeRes
