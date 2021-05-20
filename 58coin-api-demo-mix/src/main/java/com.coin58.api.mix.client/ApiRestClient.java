@@ -20,4 +20,6 @@ public interface ApiRestClient {
 
     List<KlineResponse> getKline(Long contractId, Integer type, Long since);
 
-    T
+    TickerResponse getTicker(long contractId);
+
+    DepthResponse getDepth(Long co
