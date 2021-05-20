@@ -22,4 +22,6 @@ public interface ApiRestClient {
 
     TickerResponse getTicker(long contractId);
 
-    DepthResponse getDepth(Long co
+    DepthResponse getDepth(Long contractId);
+
+}
