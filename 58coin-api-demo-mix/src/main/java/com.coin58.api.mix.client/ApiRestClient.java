@@ -17,3 +17,7 @@ public interface ApiRestClient {
     List<TradeResponse> getTrades(long contraceId);
 
     List<Contract> getContractList();
+
+    List<KlineResponse> getKline(Long contractId, Integer type, Long since);
+
+    T
