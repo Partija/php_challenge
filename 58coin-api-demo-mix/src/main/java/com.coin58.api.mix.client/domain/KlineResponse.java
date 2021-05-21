@@ -12,4 +12,8 @@ import lombok.Data;
 @Data
 public class KlineResponse {
 
-    private Str
+    private String id;
+    private String open;
+    private String high;
+    private String low;
+    private St
