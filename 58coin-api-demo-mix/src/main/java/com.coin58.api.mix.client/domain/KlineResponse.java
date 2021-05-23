@@ -19,4 +19,9 @@ public class KlineResponse {
     private String close;
     private String volume;
     private String amount;
-    private String productId
+    private String productId;
+    private String type;
+    private String time;
+
+    @Override
+    public String toStri
