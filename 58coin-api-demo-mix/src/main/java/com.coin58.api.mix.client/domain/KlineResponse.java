@@ -16,4 +16,7 @@ public class KlineResponse {
     private String open;
     private String high;
     private String low;
-    private St
+    private String close;
+    private String volume;
+    private String amount;
+    private String productId
