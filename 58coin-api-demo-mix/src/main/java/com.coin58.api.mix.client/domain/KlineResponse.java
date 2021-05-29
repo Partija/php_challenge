@@ -24,4 +24,7 @@ public class KlineResponse {
     private String time;
 
     @Override
-    public String toStri
+    public String toString() {
+        return "Kline{" +
+                "id=" + id +
+         
