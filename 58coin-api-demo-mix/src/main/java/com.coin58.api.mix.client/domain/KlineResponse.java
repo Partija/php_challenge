@@ -27,4 +27,6 @@ public class KlineResponse {
     public String toString() {
         return "Kline{" +
                 "id=" + id +
-         
+                ",open=" + open +
+                ",high=" + high +
+                ",low=" + low 
