@@ -29,4 +29,7 @@ public class KlineResponse {
                 "id=" + id +
                 ",open=" + open +
                 ",high=" + high +
-                ",low=" + low 
+                ",low=" + low +
+                ",close=" + close +
+                ",volume=" + volume +
+       
