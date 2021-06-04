@@ -34,4 +34,8 @@ public class KlineResponse {
                 ",volume=" + volume +
                 ",amount=" + amount +
                 ",productId=" + productId +
-                ",typ
+                ",type=" + type +
+                ",time=" + time +
+                "}";
+    }
+}
