@@ -11,4 +11,8 @@ import java.math.BigDecimal;
  * @description Account related - asset query - response entity
  * @modify
  */
-@D
+@Data
+public class TradeResponse {
+
+    private int size;
+    private BigDecima
