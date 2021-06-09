@@ -7,4 +7,8 @@ import java.math.BigDecimal;
 
 /**
  * @author lhc
- * @ver
+ * @version 1.0
+ * @description Account related - asset query - response entity
+ * @modify
+ */
+@D
