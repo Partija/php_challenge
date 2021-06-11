@@ -20,3 +20,6 @@ public class TradeResponse {
     private long createDate;
 
     @Override
+    public String toString() {
+        return "TradeResponse{" +
+                "size=" + si
