@@ -15,4 +15,8 @@ import java.math.BigDecimal;
 public class TradeResponse {
 
     private int size;
-    private BigDecima
+    private BigDecimal price;
+    private int side;
+    private long createDate;
+
+    @Override
