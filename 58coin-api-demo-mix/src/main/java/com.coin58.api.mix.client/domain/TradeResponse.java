@@ -25,4 +25,7 @@ public class TradeResponse {
                 "size=" + size +
                 ", price=" + price +
                 ", side=" + side +
-           
+                ", createDate=" + createDate +
+                '}';
+    }
+}
