@@ -22,4 +22,7 @@ public class TradeResponse {
     @Override
     public String toString() {
         return "TradeResponse{" +
-                "size=" + si
+                "size=" + size +
+                ", price=" + price +
+                ", side=" + side +
+           
