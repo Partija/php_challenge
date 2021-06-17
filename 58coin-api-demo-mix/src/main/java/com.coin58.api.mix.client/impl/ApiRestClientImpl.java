@@ -11,4 +11,6 @@ import com.coin58.api.mix.client.domain.DepthResponse;
 import java.util.List;
 
 /**
- * Implementation of 58
+ * Implementation of 58coin's REST API using Retrofit with synchronous/blocking method calls.
+ */
+publ
