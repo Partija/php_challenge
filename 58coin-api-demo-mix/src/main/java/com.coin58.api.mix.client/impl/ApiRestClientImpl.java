@@ -13,4 +13,8 @@ import java.util.List;
 /**
  * Implementation of 58coin's REST API using Retrofit with synchronous/blocking method calls.
  */
-publ
+public class ApiRestClientImpl implements ApiRestClient {
+
+    private final ApiService apiService;
+
+    pub
