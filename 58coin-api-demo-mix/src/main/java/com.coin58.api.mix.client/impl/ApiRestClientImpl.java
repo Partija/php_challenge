@@ -17,4 +17,5 @@ public class ApiRestClientImpl implements ApiRestClient {
 
     private final ApiService apiService;
 
-    pub
+    public ApiRestClientImpl(String apiKey, String secret) {
+        apiService = ApiService
