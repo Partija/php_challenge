@@ -26,4 +26,5 @@ public class ApiRestClientImpl implements ApiRestClient {
     }
 
     @Override
-  
+    public List<TradeResponse> getTrades(long contraceId){
+        return ApiServiceGenerator.execute
