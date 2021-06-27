@@ -27,4 +27,8 @@ public class ApiRestClientImpl implements ApiRestClient {
 
     @Override
     public List<TradeResponse> getTrades(long contraceId){
-        return ApiServiceGenerator.execute
+        return ApiServiceGenerator.executeSync(apiService.getTrades(contraceId));
+    }
+
+    @Override
+    public List<Contrac
