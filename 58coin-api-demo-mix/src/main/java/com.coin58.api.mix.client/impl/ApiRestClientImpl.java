@@ -31,4 +31,5 @@ public class ApiRestClientImpl implements ApiRestClient {
     }
 
     @Override
-    public List<Contrac
+    public List<Contract> getContractList() {
+        return ApiServiceGenerator.executeSync(apiService.getContractList
