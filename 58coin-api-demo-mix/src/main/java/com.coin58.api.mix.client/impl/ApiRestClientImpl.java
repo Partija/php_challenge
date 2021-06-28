@@ -32,4 +32,8 @@ public class ApiRestClientImpl implements ApiRestClient {
 
     @Override
     public List<Contract> getContractList() {
-        return ApiServiceGenerator.executeSync(apiService.getContractList
+        return ApiServiceGenerator.executeSync(apiService.getContractList());
+    }
+
+    @Override
+    public List<KlineResponse> getKline(Long contractId, Integer type, Long
