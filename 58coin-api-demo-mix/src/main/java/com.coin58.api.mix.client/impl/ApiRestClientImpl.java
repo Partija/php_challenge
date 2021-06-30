@@ -41,4 +41,5 @@ public class ApiRestClientImpl implements ApiRestClient {
     }
 
     @Override
-    public TickerResponse getTicker(lo
+    public TickerResponse getTicker(long contraceId) {
+        return ApiServiceGenerator.executeSync(apiService.getTickerList(contraceId))
