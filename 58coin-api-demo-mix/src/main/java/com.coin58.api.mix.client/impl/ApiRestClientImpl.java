@@ -47,4 +47,7 @@ public class ApiRestClientImpl implements ApiRestClient {
 
     @Override
     public DepthResponse getDepth(Long contractId) {
-        retur
+        return ApiServiceGenerator.executeSync(apiService.getDepth(contractId));
+    }
+
+}
