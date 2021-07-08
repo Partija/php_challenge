@@ -12,4 +12,8 @@ import retrofit2.http.*;
 import java.util.List;
 
 /**
- * 58coin's REST API URL mappings and end
+ * 58coin's REST API URL mappings and endpoint security configuration.
+ */
+public interface ApiService {
+
+    @Headers({ApiConstants.HEAD
