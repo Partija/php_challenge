@@ -16,4 +16,5 @@ import java.util.List;
  */
 public interface ApiService {
 
-    @Headers({ApiConstants.HEAD
+    @Headers({ApiConstants.HEADER_CONTENT_TYPE_JSON, ApiConstants.ENDPOINT_HEADER_API_KEY})
+    @GET("/v1/mix/market
