@@ -22,4 +22,6 @@ public interface ApiService {
 
     @Headers(ApiConstants.HEADER_CONTENT_TYPE_JSON)
     @GET("/v1/mix/contract/list")
-  
+    Call<List<Contract>> getContractList();
+
+    @Headers(ApiConstants.HEADER_CONTENT_
