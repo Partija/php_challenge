@@ -5,4 +5,6 @@ import com.coin58.api.mix.client.ApiRestClient;
 
 /**
  * @author guozhengMu
- 
+ * @version 1.0
+ * @date 2019/3/12 18:34
+ * @description Term Contract - Market Quotes
