@@ -11,4 +11,5 @@ import com.coin58.api.mix.client.ApiRestClient;
  * @modify
  */
 public class DepthExample {
-    public stati
+    public static void main(String[] args) {
+        ApiClientFactory factory = ApiClientFa
