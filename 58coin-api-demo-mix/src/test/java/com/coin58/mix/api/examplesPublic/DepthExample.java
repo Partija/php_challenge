@@ -15,4 +15,6 @@ public class DepthExample {
         ApiClientFactory factory = ApiClientFactory.newInstance();
         ApiRestClient client = factory.newRestClient();
 
-       
+        System.out.println(client.getDepth(4001L));
+    }
+}
