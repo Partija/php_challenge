@@ -10,4 +10,6 @@ import com.coin58.api.mix.client.domain.TickerResponse;
  * @description Term Contract - Market Data - Latest Transaction Data List
  * @modify
  */
-public cl
+public class TickerExample {
+    public static void main(String[] args) {
+        ApiClientFactory factory = ApiClientFactor
