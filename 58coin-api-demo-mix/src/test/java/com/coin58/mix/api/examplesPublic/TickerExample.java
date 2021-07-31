@@ -12,4 +12,7 @@ import com.coin58.api.mix.client.domain.TickerResponse;
  */
 public class TickerExample {
     public static void main(String[] args) {
-        ApiClientFactory factory = ApiClientFactor
+        ApiClientFactory factory = ApiClientFactory.newInstance();
+        ApiRestClient client = factory.newRestClient();
+
+        Tic
