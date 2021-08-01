@@ -15,4 +15,6 @@ public class TickerExample {
         ApiClientFactory factory = ApiClientFactory.newInstance();
         ApiRestClient client = factory.newRestClient();
 
-        Tic
+        TickerResponse tickerResponses = client.getTicker(4001L);
+
+        System.out.pr
