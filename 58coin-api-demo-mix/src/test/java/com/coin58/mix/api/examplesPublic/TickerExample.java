@@ -17,4 +17,6 @@ public class TickerExample {
 
         TickerResponse tickerResponses = client.getTicker(4001L);
 
-        System.out.pr
+        System.out.println(tickerResponses);
+    }
+}
