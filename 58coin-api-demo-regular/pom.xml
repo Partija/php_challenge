@@ -7,4 +7,6 @@
 
     <parent>
         <groupId>com.58coin.open</groupId>
-        <art
+        <artifactId>58coin-api-demo-java</artifactId>
+        <version>1.0.0</version>
+    </
