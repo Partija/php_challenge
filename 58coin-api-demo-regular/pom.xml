@@ -12,4 +12,7 @@
     </parent>
 
     <artifactId>58coin-api-demo-regular</artifactId>
-    <version>1.0.0
+    <version>1.0.0</version>
+
+    <properties>
+        <com.squareup.retrofit2.version>2.5.0</com.sq
