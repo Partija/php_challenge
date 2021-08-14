@@ -15,4 +15,6 @@
     <version>1.0.0</version>
 
     <properties>
-        <com.squareup.retrofit2.version>2.5.0</com.sq
+        <com.squareup.retrofit2.version>2.5.0</com.squareup.retrofit2.version>
+        <slf4j.version>1.7.26</slf4j.version>
+        <logback.versi
