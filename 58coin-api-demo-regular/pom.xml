@@ -21,4 +21,6 @@
     </properties>
 
     <dependencies>
-        <dep
+        <dependency>
+            <groupId>com.58coin.open</groupId>
+            <artifactId>58coin-api-d
