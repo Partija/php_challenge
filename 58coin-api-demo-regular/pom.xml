@@ -23,4 +23,6 @@
     <dependencies>
         <dependency>
             <groupId>com.58coin.open</groupId>
-            <artifactId>58coin-api-d
+            <artifactId>58coin-api-demo-common</artifactId>
+            <version>${project.version}</version>
+        
