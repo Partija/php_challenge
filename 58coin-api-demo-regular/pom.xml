@@ -25,4 +25,7 @@
             <groupId>com.58coin.open</groupId>
             <artifactId>58coin-api-demo-common</artifactId>
             <version>${project.version}</version>
-        
+        </dependency>
+
+        <dependency>
+            <groupId>com.squareup.retrofit2</group
