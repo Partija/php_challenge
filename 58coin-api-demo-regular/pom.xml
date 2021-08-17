@@ -28,4 +28,6 @@
         </dependency>
 
         <dependency>
-            <groupId>com.squareup.retrofit2</group
+            <groupId>com.squareup.retrofit2</groupId>
+            <artifactId>retrofit</artifactId>
+            <version>${
