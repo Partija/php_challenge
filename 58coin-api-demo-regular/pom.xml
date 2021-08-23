@@ -32,4 +32,6 @@
             <artifactId>retrofit</artifactId>
             <version>${com.squareup.retrofit2.version}</version>
         </dependency>
-   
+        <dependency>
+            <groupId>com.squareup.retrofit2</groupId>
+            <
