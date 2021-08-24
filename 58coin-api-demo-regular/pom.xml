@@ -35,4 +35,8 @@
         <dependency>
             <groupId>com.squareup.retrofit2</groupId>
             <artifactId>converter-jackson</artifactId>
-            <version>${com.squareup.retrofit2.
+            <version>${com.squareup.retrofit2.version}</version>
+        </dependency>
+
+        <dependency>
+            <group
