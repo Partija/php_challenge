@@ -45,4 +45,6 @@
         </dependency>
 
         <dependency>
-            <groupId>com
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+            <versio
