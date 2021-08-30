@@ -47,4 +47,7 @@
         <dependency>
             <groupId>commons-codec</groupId>
             <artifactId>commons-codec</artifactId>
-            <versio
+            <version>1.10</version>
+        </dependency>
+        <dependency>
+            <groupI
