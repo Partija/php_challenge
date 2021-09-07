@@ -71,4 +71,6 @@
             <artifactId>jcl-over-slf4j</artifactId>
             <version>${slf4j.version}</version>
         </dependency>
-        <dep
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>
