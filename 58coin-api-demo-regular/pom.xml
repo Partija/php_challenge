@@ -75,4 +75,8 @@
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
             <version>${logback.version}</version>
-        </d
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+   
