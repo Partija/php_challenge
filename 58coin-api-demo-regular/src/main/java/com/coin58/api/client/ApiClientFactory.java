@@ -12,4 +12,8 @@ import com.coin58.api.common.impl.ApiSocketClientImpl;
  */
 public class ApiClientFactory {
 
-    private Str
+    private String apiKey;
+
+    private String apiSecret;
+
+    private ApiClientFactory(String apiKey
