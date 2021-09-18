@@ -21,4 +21,8 @@ public class ApiClientFactory {
         this.apiSecret = apiSecret;
     }
 
-    public static ApiClientFactory newInstance(String apiKey, String apiSecre
+    public static ApiClientFactory newInstance(String apiKey, String apiSecret) {
+        return new ApiClientFactory(apiKey, apiSecret);
+    }
+
+    publ
