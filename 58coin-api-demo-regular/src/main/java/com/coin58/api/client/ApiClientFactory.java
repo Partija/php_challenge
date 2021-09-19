@@ -29,4 +29,5 @@ public class ApiClientFactory {
         return new ApiClientFactory(null, null);
     }
 
-    pu
+    public ApiRestClient newRestClient() {
+        return new ApiRestClientImpl(apiKey, apiSecret)
