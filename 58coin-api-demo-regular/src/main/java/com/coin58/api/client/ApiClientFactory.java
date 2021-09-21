@@ -37,4 +37,5 @@ public class ApiClientFactory {
         return new ApiRestClientImpl(apiKey, apiSecret, restUrl);
     }
 
-    public ApiAsyncRestClient newAsyn
+    public ApiAsyncRestClient newAsyncRestClient() {
+        return new ApiAsyncRestClientImpl(apiKey, apiSecre
