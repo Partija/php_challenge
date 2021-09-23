@@ -42,4 +42,7 @@ public class ApiClientFactory {
     }
 
     public ApiAsyncRestClient newAsyncRestClient(String restUrl) {
-        retu
+        return new ApiAsyncRestClientImpl(apiKey, apiSecret, restUrl);
+    }
+
+    public ApiSocke
