@@ -7,4 +7,6 @@ import java.math.BigDecimal;
 import java.util.List;
 
 /**
- * 58coin API façade, supporting
+ * 58coin API façade, supporting synchronous/blocking access 58coin's REST API.
+ */
+public interface ApiRestClien
