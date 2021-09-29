@@ -9,4 +9,6 @@ import java.util.List;
 /**
  * 58coin API façade, supporting synchronous/blocking access 58coin's REST API.
  */
-public interface ApiRestClien
+public interface ApiRestClient {
+
+    JSONObject transfer(String currencyName, Integer triggerSiteId, Integer targetSiteId, Stri
