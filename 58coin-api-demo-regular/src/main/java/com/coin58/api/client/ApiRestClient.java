@@ -15,4 +15,8 @@ public interface ApiRestClient {
 
     List<AssetsResponse> getAssets(int siteId);
 
-    Lis
+    List<Contract> getContractList();
+
+    List<SettlementResponse> getSettlementList();
+
+    List
