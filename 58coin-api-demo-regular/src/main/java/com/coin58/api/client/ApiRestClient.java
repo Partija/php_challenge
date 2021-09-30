@@ -19,4 +19,6 @@ public interface ApiRestClient {
 
     List<SettlementResponse> getSettlementList();
 
-    List
+    List<KlineResponse> getKline(String product, String type, long since);
+
+    Ticke
