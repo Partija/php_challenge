@@ -21,4 +21,8 @@ public interface ApiRestClient {
 
     List<KlineResponse> getKline(String product, String type, long since);
 
-    Ticke
+    TickerResponse getTicker(long contractId);
+
+    DepthResponse getDepth(Long contractId);
+
+   
