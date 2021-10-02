@@ -27,4 +27,8 @@ public interface ApiRestClient {
 
     AssetResponse getAsset(Long contractId);
 
-    NewOrderResponse newOrder(NewOrder order)
+    NewOrderResponse newOrder(NewOrder order);
+
+    JSONObject cancelOrder(long orderId, long cancelOrder);
+
+    JSONObject cancelOrderBatch(L
