@@ -25,4 +25,6 @@ public interface ApiRestClient {
 
     DepthResponse getDepth(Long contractId);
 
-   
+    AssetResponse getAsset(Long contractId);
+
+    NewOrderResponse newOrder(NewOrder order)
