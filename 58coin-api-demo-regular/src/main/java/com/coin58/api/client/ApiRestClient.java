@@ -35,4 +35,6 @@ public interface ApiRestClient {
 
     JSONObject closeAll(long contractId);
 
-    List<OrderListResponse> 
+    List<OrderListResponse> getOrderList(long contractId, Integer side, Integer close);
+
+    List<FillListResponse> g
