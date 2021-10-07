@@ -31,4 +31,8 @@ public interface ApiRestClient {
 
     JSONObject cancelOrder(long orderId, long cancelOrder);
 
-    JSONObject cancelOrderBatch(L
+    JSONObject cancelOrderBatch(Long contractId);
+
+    JSONObject closeAll(long contractId);
+
+    List<OrderListResponse> 
