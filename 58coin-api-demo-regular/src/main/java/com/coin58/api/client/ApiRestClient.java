@@ -39,4 +39,8 @@ public interface ApiRestClient {
 
     List<FillListResponse> getFillList(long contractId, Integer close, Integer limit);
 
-    JSONObject getPositionList(long c
+    JSONObject getPositionList(long contractId);
+
+    JSONObject newPlanOrder(NewPlanOrder planOrder);
+
+    JSONObject cancelPl
