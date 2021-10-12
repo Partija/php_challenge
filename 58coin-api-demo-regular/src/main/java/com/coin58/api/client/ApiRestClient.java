@@ -43,4 +43,8 @@ public interface ApiRestClient {
 
     JSONObject newPlanOrder(NewPlanOrder planOrder);
 
-    JSONObject cancelPl
+    JSONObject cancelPlan(long contractId, long planId);
+
+    JSONObject cancelPlanBatch(Long contractId);
+
+    
