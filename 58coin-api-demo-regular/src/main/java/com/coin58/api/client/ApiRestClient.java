@@ -49,4 +49,6 @@ public interface ApiRestClient {
 
     List<PlanListResponse> getPlanList(long contractId, Integer limit);
 
-    JSONO
+    JSONObject getWallet();
+
+    JSONObject accountTransfer(long contractId, long action
