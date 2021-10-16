@@ -51,4 +51,9 @@ public interface ApiRestClient {
 
     JSONObject getWallet();
 
-    JSONObject accountTransfer(long contractId, long action
+    JSONObject accountTransfer(long contractId, long action, BigDecimal amount);
+
+    /**
+     * 获取账单信息
+     * @param contractId
+     * @par
