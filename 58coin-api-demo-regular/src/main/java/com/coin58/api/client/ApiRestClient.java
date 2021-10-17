@@ -60,4 +60,6 @@ public interface ApiRestClient {
      * @param startDate
      * @param endDate
      * @param curPage
-     * @
+     * @return
+     */
+    List<LedgerResponse> getLedgetList(Long contractId, Integer act
