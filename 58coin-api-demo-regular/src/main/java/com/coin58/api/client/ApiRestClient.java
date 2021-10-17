@@ -56,4 +56,8 @@ public interface ApiRestClient {
     /**
      * 获取账单信息
      * @param contractId
-     * @par
+     * @param action
+     * @param startDate
+     * @param endDate
+     * @param curPage
+     * @
