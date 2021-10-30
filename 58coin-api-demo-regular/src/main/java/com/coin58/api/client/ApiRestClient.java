@@ -62,4 +62,8 @@ public interface ApiRestClient {
      * @param curPage
      * @return
      */
-    List<LedgerResponse> getLedgetList(Long contractId, Integer act
+    List<LedgerResponse> getLedgetList(Long contractId, Integer action, Long startDate, Long endDate, Integer curPage, Integer pageSize);
+
+    /**
+     * 获取已完成订单的信息
+  
