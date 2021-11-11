@@ -66,4 +66,7 @@ public interface ApiRestClient {
 
     /**
      * 获取已完成订单的信息
-  
+     * @param orderId
+     * @return
+     */
+    FinishOrderResponse getFinishO
