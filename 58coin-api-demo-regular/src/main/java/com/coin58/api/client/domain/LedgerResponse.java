@@ -5,4 +5,6 @@ import lombok.Data;
 import java.math.BigDecimal;
 
 /**
- * @Descript
+ * @Description TODO
+ * @BelongsPackage com.coin58.api.client.domain
+ * @ClassName LedgerR
