@@ -26,3 +26,8 @@ public class LedgerResponse {
     /**
      * 合约id
      */
+    private long contractId;
+    /**
+     * 合约名称
+     */
+    private String contrac
