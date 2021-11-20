@@ -30,4 +30,12 @@ public class LedgerResponse {
     /**
      * 合约名称
      */
-    private String contrac
+    private String contractName;
+    /**
+     * 账单类型
+     * 0：买
+     * 1：卖
+     * 2：转入
+     * 3：转出
+     * 20：爆仓
+     
