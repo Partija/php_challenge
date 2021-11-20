@@ -20,4 +20,9 @@ public class LedgerResponse {
      */
     private long id;
     /**
- 
+     * 用户id
+     */
+    private long userId;
+    /**
+     * 合约id
+     */
