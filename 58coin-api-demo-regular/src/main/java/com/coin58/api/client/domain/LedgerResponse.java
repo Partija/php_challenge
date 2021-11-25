@@ -43,4 +43,10 @@ public class LedgerResponse {
      * 30：总账户转入子账户
      * 31：子账户转入总账户
      */
-    private
+    private int action;
+    /**
+     * 金额
+     */
+    private BigDecimal amount;
+    /**
+     
