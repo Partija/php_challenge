@@ -49,4 +49,10 @@ public class LedgerResponse {
      */
     private BigDecimal amount;
     /**
-     
+     * 手续费
+     */
+    private BigDecimal fee;
+    /**
+     * 已实现
+     */
+    private 
