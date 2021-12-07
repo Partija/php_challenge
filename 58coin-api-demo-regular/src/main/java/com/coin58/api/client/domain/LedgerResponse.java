@@ -55,4 +55,8 @@ public class LedgerResponse {
     /**
      * 已实现
      */
-    private 
+    private BigDecimal realised;
+    /**
+     * 账户交易前账户余额
+     */
+    private BigDecimal ol
