@@ -59,4 +59,10 @@ public class LedgerResponse {
     /**
      * 账户交易前账户余额
      */
-    private BigDecimal ol
+    private BigDecimal oldBalance;
+    /**
+     * 账户交易后账户余额
+     */
+    private BigDecimal newBalance;
+    /**
+  
