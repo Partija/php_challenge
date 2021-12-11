@@ -65,4 +65,8 @@ public class LedgerResponse {
      */
     private BigDecimal newBalance;
     /**
-  
+     *  创建时间
+     */
+    private long createdDate;
+
+}
