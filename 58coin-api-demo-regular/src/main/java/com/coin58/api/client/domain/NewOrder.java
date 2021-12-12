@@ -5,4 +5,10 @@ import com.coin58.api.common.enums.OrderTypeEnum;
 import com.coin58.api.common.enums.SideEnum;
 import lombok.Data;
 
-impo
+import java.math.BigDecimal;
+
+@Data
+public class NewOrder {
+
+    private long contractId;
+   
