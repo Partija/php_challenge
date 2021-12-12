@@ -13,4 +13,7 @@ public class NewOrder {
     private long contractId;
     private OrderTypeEnum orderType;
     private SideEnum side;
-    private
+    private Integer leverage;
+    private int size;
+    private BigDecimal price;
+    private CloseType
