@@ -11,4 +11,6 @@ import java.math.BigDecimal;
 public class NewOrder {
 
     private long contractId;
-   
+    private OrderTypeEnum orderType;
+    private SideEnum side;
+    private
