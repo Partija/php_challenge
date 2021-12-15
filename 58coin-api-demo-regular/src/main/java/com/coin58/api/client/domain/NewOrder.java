@@ -16,4 +16,5 @@ public class NewOrder {
     private Integer leverage;
     private int size;
     private BigDecimal price;
-    private CloseType
+    private CloseTypeEnum closeType;
+}
