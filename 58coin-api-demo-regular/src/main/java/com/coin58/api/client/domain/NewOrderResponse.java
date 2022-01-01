@@ -7,4 +7,8 @@ import java.io.Serializable;
 @Data
 public class NewOrderResponse implements Serializable {
 
-    private Stri
+    private String orderId;
+
+    @Override
+    public String toString() {
+        return "NewOrder{" + "order
