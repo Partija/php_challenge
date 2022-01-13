@@ -11,4 +11,6 @@ public class NewOrderResponse implements Serializable {
 
     @Override
     public String toString() {
-        return "NewOrder{" + "order
+        return "NewOrder{" + "orderId='" + orderId + '\'' + '}';
+    }
+}
