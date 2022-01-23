@@ -11,4 +11,6 @@ import com.coin58.api.common.impl.ApiServiceGenerator;
 import java.util.List;
 
 /**
- * Implementation of 58coin's REST API using Retrofit wit
+ * Implementation of 58coin's REST API using Retrofit with asynchronous/non-blocking method calls.
+ */
+public class ApiAsyncRestClientImpl imple
