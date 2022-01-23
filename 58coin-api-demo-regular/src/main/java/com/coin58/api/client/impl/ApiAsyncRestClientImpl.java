@@ -13,4 +13,8 @@ import java.util.List;
 /**
  * Implementation of 58coin's REST API using Retrofit with asynchronous/non-blocking method calls.
  */
-public class ApiAsyncRestClientImpl imple
+public class ApiAsyncRestClientImpl implements ApiAsyncRestClient {
+
+    private final ApiService apiService;
+
+    pu
