@@ -22,4 +22,7 @@ public class ApiAsyncRestClientImpl implements ApiAsyncRestClient {
     }
 
     public ApiAsyncRestClientImpl(String apiKey, String secret, String restUrl) {
-        apiService = ApiS
+        apiService = ApiServiceGenerator.createService(ApiService.class, apiKey, secret, restUrl);
+    }
+
+ 
