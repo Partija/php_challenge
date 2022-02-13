@@ -26,4 +26,5 @@ public class ApiAsyncRestClientImpl implements ApiAsyncRestClient {
     }
 
     @Override
-    public void getContractList(ApiCallback<List<Contract>> cal
+    public void getContractList(ApiCallback<List<Contract>> callback) {
+        apiService.getContractList().enqueue(new ApiCallbackAdapt
