@@ -31,4 +31,6 @@ public class ApiAsyncRestClientImpl implements ApiAsyncRestClient {
     }
 
     @Override
-    public void newOrder(NewOrder or
+    public void newOrder(NewOrder order, ApiCallback<NewOrderResponse> callback) {
+        apiService
+                .newOrder(order.get
