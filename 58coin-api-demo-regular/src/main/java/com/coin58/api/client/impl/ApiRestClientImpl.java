@@ -100,3 +100,58 @@ public class ApiRestClientImpl implements ApiRestClient {
     }
 
     @Override
+    public JSONObject newPlanOrder(NewPlanOrder planOrder) {
+        return ApiServiceGenerator.executeSync(
+                apiService.newPlanOrder(planOrder.getContractId(), planOrder.getSide(), planOrder.getTriggerPrice(), planOrder.getSize(), planOrder.getMode(), planOrder.getType(), planOrder.getPrice()));
+    }
+
+    @Override
+    public JSONObject cancelPlan(long contractId, long planId) {
+        return ApiServiceGenerator.executeSync(apiService.cancelPlan(contractId, planId));
+    }
+
+    @Override
+    public JSONObject cancelPlanBatch(Long contractId) {
+        return ApiServiceGenerator.executeSync(apiService.cancelPlanBatch(contractId));
+    }
+
+    @Override
+    public List<PlanListResponse> getPlanList(long contractId, Integer limit) {
+        return ApiServiceGenerator.executeSync(apiService.getPlanList(contractId, limit));
+    }
+
+    @Override
+    public JSONObject getWallet() {
+        return ApiServiceGenerator.executeSync(apiService.getWallet());
+    }
+
+    @Override
+    public JSONObject accountTransfer(long contractId, long action, BigDecimal amount) {
+        return ApiServiceGenerator.executeSync(apiService.accountTransfer(contractId, action, amount));
+    }
+
+    /**
+     * 获取账单信息
+     * @param contractId
+     * @param action
+     * @param startDate
+     * @param endDate
+     * @param curPage
+     * @return
+     */
+    @Override
+    public List<LedgerResponse> getLedgetList(Long contractId, Integer action,  Long startDate, Long endDate, Integer curPage, Integer pageSize) {
+        return ApiServiceGenerator.executeSync(apiService.getLedgetList(contractId, action,startDate,endDate,curPage, pageSize));
+    }
+
+
+    /**
+     * 获取已完成订单的状态
+     * @param orderId
+     * @return
+     */
+    @Override
+    public FinishOrderResponse getFinishOrder(long orderId) {
+        return ApiServiceGenerator.executeSync(apiService.getFinishOrder(orderId));
+    }
+}
