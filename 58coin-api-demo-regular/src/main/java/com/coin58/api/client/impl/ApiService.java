@@ -6,4 +6,8 @@ import com.coin58.api.common.constant.ApiConstants;
 import retrofit2.Call;
 import retrofit2.http.*;
 
-import java.math.BigDecima
+import java.math.BigDecimal;
+import java.util.List;
+
+/**
+ * 58coin's REST API URL mappings and endpoint security c
