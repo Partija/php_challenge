@@ -10,4 +10,9 @@ import java.math.BigDecimal;
 import java.util.List;
 
 /**
- * 58coin's REST API URL mappings and endpoint security c
+ * 58coin's REST API URL mappings and endpoint security configuration.
+ */
+public interface ApiService {
+
+    @FormUrlEncoded
+    @Headers
