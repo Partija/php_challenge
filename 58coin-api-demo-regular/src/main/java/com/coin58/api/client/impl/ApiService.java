@@ -19,4 +19,6 @@ public interface ApiService {
     @POST("/v1/account/transfer/request")
     Call<JSONObject> transfer(@Field("currencyName") String currencyName, @Field("triggerSiteId") Integer triggerSiteId, @Field("targetSiteId") Integer targetSiteId, @Field("amount") String amount);
 
-    @Headers({ApiConstants.HEADER
+    @Headers({ApiConstants.HEADER_CONTENT_TYPE_JSON, ApiConstants.ENDPOINT_HEADER_API_KEY})
+    @GET("/v1/account/assets/sites")
+  
