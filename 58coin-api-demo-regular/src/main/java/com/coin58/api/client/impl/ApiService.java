@@ -24,4 +24,8 @@ public interface ApiService {
     Call<List<AssetsResponse>> getAssets(@Query("siteId") int siteId);
 
     @Headers({ApiConstants.HEADER_CONTENT_TYPE_JSON, ApiConstants.ENDPOINT_HEADER_API_KEY})
-    @GET("/v1/r
+    @GET("/v1/regular/account/wallet")
+    Call<JSONObject> getWallet();
+
+    @FormUrlEncoded
+    @Headers(A
