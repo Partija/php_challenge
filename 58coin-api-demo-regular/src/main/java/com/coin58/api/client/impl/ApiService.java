@@ -29,4 +29,5 @@ public interface ApiService {
 
     @FormUrlEncoded
     @Headers(ApiConstants.ENDPOINT_HEADER_API_KEY)
-    @POST("/v1/regular/account/trans
+    @POST("/v1/regular/account/transfer")
+    Call<JSONObject> accountTransfer(@Field("contractId") long contractId
