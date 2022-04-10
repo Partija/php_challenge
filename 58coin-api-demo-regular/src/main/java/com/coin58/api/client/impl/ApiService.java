@@ -34,4 +34,7 @@ public interface ApiService {
 
     @Headers(ApiConstants.HEADER_CONTENT_TYPE_JSON)
     @GET("/v1/regular/contract/list")
-    Call<List<Cont
+    Call<List<Contract>> getContractList();
+
+    @Headers(ApiConstants.HEADER_CONTENT_TYPE_JSON)
+  
