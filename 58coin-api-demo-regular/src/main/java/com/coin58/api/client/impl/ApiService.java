@@ -37,4 +37,5 @@ public interface ApiService {
     Call<List<Contract>> getContractList();
 
     @Headers(ApiConstants.HEADER_CONTENT_TYPE_JSON)
-  
+    @GET("/v1/regular/guide/settlement/list")
+    Call<List<SettlementResponse>> getS
