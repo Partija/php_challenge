@@ -32,4 +32,6 @@ public interface ApiService {
     @POST("/v1/regular/account/transfer")
     Call<JSONObject> accountTransfer(@Field("contractId") long contractId, @Field("action") long action, @Field("amount") BigDecimal amount);
 
-    @Heade
+    @Headers(ApiConstants.HEADER_CONTENT_TYPE_JSON)
+    @GET("/v1/regular/contract/list")
+    Call<List<Cont
