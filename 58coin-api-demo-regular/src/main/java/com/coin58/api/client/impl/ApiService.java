@@ -38,4 +38,7 @@ public interface ApiService {
 
     @Headers(ApiConstants.HEADER_CONTENT_TYPE_JSON)
     @GET("/v1/regular/guide/settlement/list")
-    Call<List<SettlementResponse>> getS
+    Call<List<SettlementResponse>> getSettlementList();
+
+    @Headers(ApiConstants.HEADER_CONTENT_TYPE_JSON)
+    @GET("/v1/regular/market/
