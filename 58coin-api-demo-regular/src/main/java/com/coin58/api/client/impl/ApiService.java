@@ -41,4 +41,5 @@ public interface ApiService {
     Call<List<SettlementResponse>> getSettlementList();
 
     @Headers(ApiConstants.HEADER_CONTENT_TYPE_JSON)
-    @GET("/v1/regular/market/
+    @GET("/v1/regular/market/kline")
+    Call<List<KlineResponse>> getKline(@Query("contractId") String contractId, @Query("type") Str
