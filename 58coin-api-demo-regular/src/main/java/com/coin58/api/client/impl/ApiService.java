@@ -42,4 +42,6 @@ public interface ApiService {
 
     @Headers(ApiConstants.HEADER_CONTENT_TYPE_JSON)
     @GET("/v1/regular/market/kline")
-    Call<List<KlineResponse>> getKline(@Query("contractId") String contractId, @Query("type") Str
+    Call<List<KlineResponse>> getKline(@Query("contractId") String contractId, @Query("type") String type, @Query("since") long since);
+
+    @Headers(ApiConstants.HEADER_CONTENT_TYPE_JSO
