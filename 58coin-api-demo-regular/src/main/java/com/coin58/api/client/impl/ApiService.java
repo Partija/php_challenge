@@ -48,4 +48,6 @@ public interface ApiService {
     @GET("/v1/regular/market/ticker")
     Call<TickerResponse> getTickerList(@Query("contractId") long contraceId);
 
-    @Headers(ApiConstants.HEADE
+    @Headers(ApiConstants.HEADER_CONTENT_TYPE_JSON)
+    @GET("/v1/regular/market/depth")
+    Call<DepthResponse> get
