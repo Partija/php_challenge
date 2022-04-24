@@ -50,4 +50,6 @@ public interface ApiService {
 
     @Headers(ApiConstants.HEADER_CONTENT_TYPE_JSON)
     @GET("/v1/regular/market/depth")
-    Call<DepthResponse> get
+    Call<DepthResponse> getDepth(@Query("contractId") long contractId);
+
+    @Headers({ApiConstants.HEADER_CONTEN
