@@ -54,4 +54,6 @@ public interface ApiService {
 
     @Headers({ApiConstants.HEADER_CONTENT_TYPE_JSON, ApiConstants.ENDPOINT_HEADER_API_KEY})
     @GET("/v1/regular/account/asset")
-  
+    Call<AssetResponse> getAsset(@Query("contractId") Long contractId);
+
+    @F
