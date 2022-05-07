@@ -56,4 +56,7 @@ public interface ApiService {
     @GET("/v1/regular/account/asset")
     Call<AssetResponse> getAsset(@Query("contractId") Long contractId);
 
-    @F
+    @FormUrlEncoded
+    @Headers(ApiConstants.ENDPOINT_HEADER_API_KEY)
+    @POST("/v1/regular/order/place")
+  
