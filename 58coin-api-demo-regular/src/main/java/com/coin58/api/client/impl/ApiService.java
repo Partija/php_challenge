@@ -59,4 +59,5 @@ public interface ApiService {
     @FormUrlEncoded
     @Headers(ApiConstants.ENDPOINT_HEADER_API_KEY)
     @POST("/v1/regular/order/place")
-    Call<NewOrderResponse> newOrder(@Field("contractId") long contractId, @Field("type") Integer type, @Field("side") Integer side, @Field("leverage") Integer leverage, @Field
+    Call<NewOrderResponse> newOrder(@Field("contractId") long contractId, @Field("type") Integer type, @Field("side") Integer side, @Field("leverage") Integer leverage, @Field("size") Integer size,
+                                    @Field("price") Big
