@@ -63,4 +63,6 @@ public interface ApiService {
                                     @Field("price") BigDecimal price, @Field("close") Integer close);
 
     @FormUrlEncoded
-    @He
+    @Headers(ApiConstants.ENDPOINT_HEADER_API_KEY)
+    @POST("/v1/regular/order/cancel")
+    Call<JSONO
