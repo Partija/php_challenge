@@ -65,4 +65,8 @@ public interface ApiService {
     @FormUrlEncoded
     @Headers(ApiConstants.ENDPOINT_HEADER_API_KEY)
     @POST("/v1/regular/order/cancel")
-    Call<JSONObject> cancelOrder(@Field("orderId") long orderId, @Field("contractId") long contractId)
+    Call<JSONObject> cancelOrder(@Field("orderId") long orderId, @Field("contractId") long contractId);
+
+    @FormUrlEncoded
+    @Headers(ApiConstants.ENDPOINT_HEADER_API_KEY)
+    @POST
