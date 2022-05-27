@@ -70,4 +70,6 @@ public interface ApiService {
     @FormUrlEncoded
     @Headers(ApiConstants.ENDPOINT_HEADER_API_KEY)
     @POST("/v1/regular/order/cancel/batch")
-    Call<JSONObject> cancelOrderBatch(@Field("cont
+    Call<JSONObject> cancelOrderBatch(@Field("contractId") long contractId);
+
+    @Headers({ApiConstants.HEADER_CONTENT_TYPE_
