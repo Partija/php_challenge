@@ -76,4 +76,5 @@ public interface ApiService {
     @POST("/v1/regular/order/close/all")
     Call<JSONObject> closeAll(long contractId);
 
-    @Headers({ApiConstants.HE
+    @Headers({ApiConstants.HEADER_CONTENT_TYPE_JSON, ApiConstants.ENDPOINT_HEADER_API_KEY})
+    @GET("/v1/regular/order/list"
