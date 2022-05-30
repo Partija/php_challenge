@@ -81,4 +81,5 @@ public interface ApiService {
     Call<List<OrderListResponse>> getOrderList(@Query("contractId") long contractId, @Query("side") Integer side, @Query("close") Integer close);
 
     @Headers({ApiConstants.HEADER_CONTENT_TYPE_JSON, ApiConstants.ENDPOINT_HEADER_API_KEY})
- 
+    @GET("/v1/regular/order/fill/list")
+    Call<List<FillListResponse>> getFillList(@Query("cont
