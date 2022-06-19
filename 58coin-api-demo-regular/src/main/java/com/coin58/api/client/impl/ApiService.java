@@ -90,4 +90,7 @@ public interface ApiService {
 
     @Headers({ApiConstants.HEADER_CONTENT_TYPE_JSON, ApiConstants.ENDPOINT_HEADER_API_KEY})
     @GET("/v1/regular/position/list")
-    Call<JSONObject> getPositionList(@Query
+    Call<JSONObject> getPositionList(@Query("contractId") long contractId);
+
+    @FormUrlEncoded
+    @Headers(ApiConstants.EN
