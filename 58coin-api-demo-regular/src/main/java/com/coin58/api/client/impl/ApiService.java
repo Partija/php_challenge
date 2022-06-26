@@ -93,4 +93,6 @@ public interface ApiService {
     Call<JSONObject> getPositionList(@Query("contractId") long contractId);
 
     @FormUrlEncoded
-    @Headers(ApiConstants.EN
+    @Headers(ApiConstants.ENDPOINT_HEADER_API_KEY)
+    @POST("/v1/regular/order/plan/close")
+    Call<JSONObject> newPlanOrder
