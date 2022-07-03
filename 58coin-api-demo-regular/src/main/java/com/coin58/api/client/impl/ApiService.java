@@ -95,4 +95,4 @@ public interface ApiService {
     @FormUrlEncoded
     @Headers(ApiConstants.ENDPOINT_HEADER_API_KEY)
     @POST("/v1/regular/order/plan/close")
-    Call<JSONObject> newPlanOrder
+    Call<JSONObject> newPlanOrder(@Field("contractId") long contractId, @Field("side") Integer side, @Field("triggerPrice") String triggerPrice
