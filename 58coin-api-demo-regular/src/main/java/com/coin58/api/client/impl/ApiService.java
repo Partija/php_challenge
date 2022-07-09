@@ -101,4 +101,4 @@ public interface ApiService {
     @FormUrlEncoded
     @Headers(ApiConstants.ENDPOINT_HEADER_API_KEY)
     @POST("/v1/regular/order/plan/cancel")
-    Ca
+    Call<JSONObject> cancelPlan(@Field("contractId") long contractId, @Field("planId") long planI
