@@ -104,4 +104,6 @@ public interface ApiService {
     Call<JSONObject> cancelPlan(@Field("contractId") long contractId, @Field("planId") long planId);
 
     @FormUrlEncoded
-    @Headers(ApiConstants.ENDPOINT_HEADER_API_K
+    @Headers(ApiConstants.ENDPOINT_HEADER_API_KEY)
+    @POST("/v1/regular/order/plan/cancel/batch")
+    Call<JSONObject> cancelPlanBatch(@F
