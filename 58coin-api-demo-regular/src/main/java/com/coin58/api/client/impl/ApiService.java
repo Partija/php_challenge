@@ -115,4 +115,4 @@ public interface ApiService {
 
     @Headers({ApiConstants.HEADER_CONTENT_TYPE_JSON, ApiConstants.ENDPOINT_HEADER_API_KEY})
     @GET("/v1/regular/ledger/list")
-    Call<List<LedgerResponse>> getLedgetList(@Query("contractId") Long contractId, @Query("a
+    Call<List<LedgerResponse>> getLedgetList(@Query("contractId") Long contractId, @Query("action") Integer action, @Query("startDate") Long startDate, @Query("endDate"
