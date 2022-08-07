@@ -14,4 +14,7 @@ public class SingatureExample {
 
     @Test
     public void createSingature() {
-        String timestamp = "155108474991
+        String timestamp = "1551084749915";
+
+        Map<String, String> params = new HashMap<>();
+        params.put("contrac
