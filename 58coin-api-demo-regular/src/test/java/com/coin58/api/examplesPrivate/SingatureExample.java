@@ -17,4 +17,7 @@ public class SingatureExample {
         String timestamp = "1551084749915";
 
         Map<String, String> params = new HashMap<>();
-        params.put("contrac
+        params.put("contractId", "2001");
+        params.put("type", "2");
+        params.put("side", "1");
+        para
