@@ -20,4 +20,6 @@ public class SingatureExample {
         params.put("contractId", "2001");
         params.put("type", "2");
         params.put("side", "1");
-        para
+        params.put("size", "1");
+
+        String signature = createSignature(apiKey, apiSecre
