@@ -22,4 +22,7 @@ public class SingatureExample {
         params.put("side", "1");
         params.put("size", "1");
 
-        String signature = createSignature(apiKey, apiSecre
+        String signature = createSignature(apiKey, apiSecret, timestamp, params);
+    }
+
+}
