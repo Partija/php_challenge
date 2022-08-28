@@ -18,4 +18,6 @@ public class ContractsExample {
     public static void main(String[] args) {
 
         ApiClientFactory factory = ApiClientFactory.newInstance();
-        ApiRestClient client 
+        ApiRestClient client = factory.newRestClient();
+
+        List<Contract> contracts = client.getContractLi
