@@ -24,3 +24,6 @@ public class ContractsExample {
 
         contracts.forEach(contract -> {
             System.out.println(contract);
+        });
+    }
+}
