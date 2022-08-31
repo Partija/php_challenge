@@ -61,3 +61,86 @@ public class SocketExample {
                 latch.countDown();
 
             }
+        });
+
+        latch.await();
+    }
+
+    @Test
+    public void subDepth() throws Exception {
+        CountDownLatch latch = new CountDownLatch(1);
+        ApiSocketClient socketClient = ApiClientFactory.newInstance().newWebSocketClient();
+        socketClient.onDepthEvent("2001", new ApiCallback<DepthEvent>() {
+            @Override
+            public void onConnected(SubMessage message) {
+                //                System.out.println("message = [" + JSON.toJSONString(message) + "]");
+                System.out.println(format(message));
+            }
+
+            @Override
+            public void onResponse(DepthEvent response) {
+                //                System.out.println("response = [" + JSON.toJSONString(response) + "]");
+                System.out.println(format(response));
+            }
+
+            @Override
+            public void onFailure(Throwable cause) {
+                if (cause != null) {
+                    cause.printStackTrace();
+                }
+
+                latch.countDown();
+            }
+
+            @Override
+            public void onClosed(int code, String reason) {
+                //                System.out.println("code = [" + code + "], reason = [" + reason + "]");
+                System.out.println(format(reason));
+            }
+        });
+
+        latch.await();
+    }
+
+    @Test
+    public void subKline() throws Exception {
+        CountDownLatch latch = new CountDownLatch(1);
+        ApiSocketClient socketClient = ApiClientFactory.newInstance().newWebSocketClient();
+        socketClient.onKlineEvent("2001", KlineIntervalEnum.FIVE_MINUTES, new ApiCallback<KlineEvent>() {
+            @Override
+            public void onConnected(SubMessage message) {
+                //                System.out.println("message = [" + JSON.toJSONString(message) + "]");
+                System.out.println(format(message));
+            }
+
+            @Override
+            public void onResponse(KlineEvent response) {
+                //                System.out.println("response = [" + JSON.toJSONString(response) + "]");
+                System.out.println(format(response));
+            }
+
+            @Override
+            public void onFailure(Throwable cause) {
+                if (cause != null) {
+                    cause.printStackTrace();
+                }
+
+                latch.countDown();
+            }
+
+            @Override
+            public void onClosed(int code, String reason) {
+                System.out.println("code = [" + code + "], reason = [" + reason + "]");
+            }
+        });
+
+        latch.await();
+    }
+
+    private String format(Object object) {
+        return JSON.toJSONString(object, SerializerFeature.PrettyFormat, SerializerFeature.WriteMapNullValue, SerializerFeature.WriteDateUseDateFormat);
+    }
+
+    @Test
+    public void subOrder() throws Exception {
+        CountDownLatch latch = new CountDownLatch(1);
