@@ -144,3 +144,81 @@ public class SocketExample {
     @Test
     public void subOrder() throws Exception {
         CountDownLatch latch = new CountDownLatch(1);
+        String apiKey = "6616146f-6fe6-447c-bd31-c346437f201b";
+        String apiSecret = "E4199FA0CD19F4996A3D78E226ACAF2D";
+        ApiClientFactory.newInstance(apiKey, apiSecret).newWebSocketClient().onOrderUpdateEvent("regular", new ApiCallback<OrderUpdateEvent>() {
+            @Override
+            public void onConnected(SubMessage message) {
+                //                System.out.println("message = [" + JSON.toJSONString(message) + "]");
+                System.out.println(format(message));
+            }
+
+            @Override
+            public void onResponse(OrderUpdateEvent response) {
+                //                System.out.println("response = [" + JSON.toJSONString(response) + "]");
+                System.out.println(format(response));
+            }
+
+            @Override
+            public void onFailure(Throwable cause) {
+                if (cause != null) {
+                    cause.printStackTrace();
+                }
+
+                latch.countDown();
+            }
+
+            @Override
+            public void onClosed(int code, String reason) {
+                System.out.println("code = [" + code + "], reason = [" + reason + "]");
+            }
+        });
+
+        latch.await();
+    }
+
+    @Test
+    public void subTickers() throws Exception {
+        CountDownLatch latch = new CountDownLatch(1);
+        String products = "2001,2002,2003";
+        ApiSocketClient socketClient = ApiClientFactory.newInstance().newWebSocketClient();
+        socketClient.onTickerEvent(products, new ApiCallback<TickerEvent>() {
+            @Override
+            public void onConnected(SubMessage message) {
+                //                System.out.println("message = [" + JSON.toJSONString(message) + "]");
+                System.out.println(format(message));
+            }
+
+            @Override
+            public void onResponse(TickerEvent response) {
+                //                System.out.println("response = [" + JSON.toJSONString(response) + "]");
+                System.out.println(format(response));
+            }
+
+            @Override
+            public void onFailure(Throwable cause) {
+                if (cause != null) {
+                    cause.printStackTrace();
+                }
+
+                latch.countDown();
+            }
+
+            @Override
+            public void onClosed(int code, String reason) {
+                System.out.println("code = [" + code + "], reason = [" + reason + "]");
+            }
+        });
+
+        latch.await();
+    }
+
+    @Test
+    public void subMixedData() throws Exception {
+        CountDownLatch latch = new CountDownLatch(1);
+
+        String depthChannel = Stream.of("2001", "2002").map(product -> product.concat("@depth")).collect(Collectors.joining("/"));
+
+        String klineChannel = Stream.of("2001", "2003").map(product -> product.concat("@kline_").concat(KlineIntervalEnum.ONE_MINUTE.getIntervalId())).collect(Collectors.joining("/"));
+
+        String channels = depthChannel.concat("/").concat(klineChannel);
