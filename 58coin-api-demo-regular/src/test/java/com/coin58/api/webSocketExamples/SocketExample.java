@@ -222,3 +222,42 @@ public class SocketExample {
         String klineChannel = Stream.of("2001", "2003").map(product -> product.concat("@kline_").concat(KlineIntervalEnum.ONE_MINUTE.getIntervalId())).collect(Collectors.joining("/"));
 
         String channels = depthChannel.concat("/").concat(klineChannel);
+
+        //        channels = channels.concat("/").concat("regular@order");
+        //
+        //        String apiKey = "6616146f-6fe6-447c-bd31-c346437f201b";
+        //        String secret = "E4199FA0CD19F4996A3D78E226ACAF2D";
+        ApiClientFactory.newInstance()
+                //        ApiClientFactory.newInstance(apiKey, secret)
+                .newWebSocketClient().createWebSocket(channels, new WebSocketListener() {
+            @Override
+            public void onMessage(WebSocket webSocket, String text) {
+                System.out.println("webSocket = [" + webSocket + "], text = [" + format(text) + "]");
+            }
+
+            @Override
+            public void onMessage(WebSocket webSocket, ByteString bytes) {
+                try {
+                    System.out.println("webSocket = [" + webSocket + "], bytes = [" + format(ZipUtil.uncompress(bytes.toByteArray())) + "]");
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+
+            @Override
+            public void onFailure(WebSocket webSocket, Throwable t, Response response) {
+                System.out.println("webSocket = [" + webSocket + "], t = [" + t + "], response = [" + response + "]");
+                latch.countDown();
+            }
+
+            @Override
+            public void onClosed(WebSocket webSocket, int code, String reason) {
+                System.out.println("webSocket = [" + webSocket + "], code = [" + code + "], reason = [" + reason + "]");
+            }
+
+        });
+
+        latch.await();
+
+    }
+}
