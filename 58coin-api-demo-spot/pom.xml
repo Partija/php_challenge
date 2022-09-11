@@ -6,4 +6,5 @@
 
 
     <parent>
-        <groupId>com.58coi
+        <groupId>com.58coin.open</groupId>
+        <artifactId>58coin-api-demo-java</artifact
