@@ -11,4 +11,8 @@
         <version>1.0.0</version>
     </parent>
 
-    <artifactId>58coin-api-demo-sp
+    <artifactId>58coin-api-demo-spot</artifactId>
+    <version>${parent.version}</version>
+
+    <properties>
+        <jdk.versio
