@@ -17,4 +17,9 @@
     <properties>
         <jdk.version>1.8</jdk.version>
         <fluent-hc.version>4.5.2</fluent-hc.version>
-    </pro
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+    
