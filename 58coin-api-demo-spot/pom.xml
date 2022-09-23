@@ -36,4 +36,7 @@
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>fluent-hc</artifactId>
-            <v
+            <version>${fluent-hc.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.a
