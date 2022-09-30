@@ -64,4 +64,6 @@
     </dependencies>
 
     <dependencyManagement>
-        <dependen
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.boot</g
