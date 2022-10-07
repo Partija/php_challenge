@@ -7,4 +7,10 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 
 /**
  * @author coin58
- * @date 2017/
+ * @date 2017/5/5
+ */
+@SpringBootApplication
+@EnableScheduling
+public class Coin58APIApp {
+
+    public stati
