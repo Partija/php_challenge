@@ -13,4 +13,5 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @EnableScheduling
 public class Coin58APIApp {
 
-    public stati
+    public static void main(String[] args) {
+        new SpringApplicationBuilder(Coin58APIApp.
