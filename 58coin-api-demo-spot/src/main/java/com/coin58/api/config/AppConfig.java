@@ -12,4 +12,7 @@ import java.util.concurrent.TimeUnit;
  * @author coin58 - 2018/4/4.
  */
 @Configuration
-public class AppConf
+public class AppConfig {
+    @Bean("api-executor")
+    public Executor executor() {
+        return new ThreadPoolExecutor(10,
