@@ -15,4 +15,5 @@ import java.util.concurrent.TimeUnit;
 public class AppConfig {
     @Bean("api-executor")
     public Executor executor() {
-        return new ThreadPoolExecutor(10,
+        return new ThreadPoolExecutor(10, 10, 10000, TimeUnit.MILLISECONDS, new LinkedBlockingQueue<>(10000),
+                new Thr
