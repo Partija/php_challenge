@@ -16,4 +16,6 @@ public class AppConfig {
     @Bean("api-executor")
     public Executor executor() {
         return new ThreadPoolExecutor(10, 10, 10000, TimeUnit.MILLISECONDS, new LinkedBlockingQueue<>(10000),
-                new Thr
+                new ThreadPoolExecutor.DiscardPolicy());
+    }
+}
