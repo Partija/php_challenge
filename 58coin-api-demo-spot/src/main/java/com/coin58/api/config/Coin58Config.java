@@ -12,4 +12,5 @@ import org.springframework.stereotype.Component;
 @Component
 public class Coin58Config {
     private String apiKey;
-    private String secretK
+    private String secretKey;
+}
