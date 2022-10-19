@@ -6,4 +6,6 @@ package com.coin58.api.constant;
  */
 public class Constants {
     public static final String AMOUNT = "amount";
-    public static final Strin
+    public static final String API_KEY = "api_key";
+    public static final String API_SECRET = "api_secret";
+    publi
