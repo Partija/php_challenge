@@ -11,3 +11,5 @@ public class Constants {
     public static final String CLIENT_OID = "client_oid";
     public static final String CONTRACT_TYPE = "contract_type";
     public static final String CURRENT_PAGE = "current_page";
+    public static final String DATE = "date";
+    public static fin
