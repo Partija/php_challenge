@@ -15,4 +15,6 @@ public class Constants {
     public static final String DEPTH_RANGE = "depthRange";
     public static final String END_DATE = "endDateMillis";
     public static final String ID = "id";
-    public static final String LEVER_RATE = "lev
+    public static final String LEVER_RATE = "lever_rate";
+    public static final String LIMIT = "limit";
+    public static f
