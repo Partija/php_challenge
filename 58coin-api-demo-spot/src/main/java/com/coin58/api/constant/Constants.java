@@ -17,4 +17,6 @@ public class Constants {
     public static final String ID = "id";
     public static final String LEVER_RATE = "lever_rate";
     public static final String LIMIT = "limit";
-    public static f
+    public static final String MARKET = "market";
+    public static final String MATCH_PRICE = "match_price";
+    pu
