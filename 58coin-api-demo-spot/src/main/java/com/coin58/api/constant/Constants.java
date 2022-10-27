@@ -19,4 +19,5 @@ public class Constants {
     public static final String LIMIT = "limit";
     public static final String MARKET = "market";
     public static final String MATCH_PRICE = "match_price";
-    pu
+    public static final String OPEN_AMOUNT = "openAmount";
+    public static final String ORDE
