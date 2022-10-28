@@ -20,4 +20,6 @@ public class Constants {
     public static final String MARKET = "market";
     public static final String MATCH_PRICE = "match_price";
     public static final String OPEN_AMOUNT = "openAmount";
-    public static final String ORDE
+    public static final String ORDER_ID = "order_id";
+    public static final String ORDER_TYPE = "orderType";
+    public static final 
