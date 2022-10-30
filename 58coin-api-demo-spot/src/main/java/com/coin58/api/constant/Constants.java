@@ -29,4 +29,5 @@ public class Constants {
     public static final String PER_PAGE = "perPage";
     public static final String PRICE = "price";
     public static final String PROTECT_PRICE = "protePrice";
-    public stat
+    public static final String QUOTE_SIZE = "quoteSize";
+    public static final String SECRET_KE
