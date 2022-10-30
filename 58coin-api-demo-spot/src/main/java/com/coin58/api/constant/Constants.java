@@ -27,4 +27,6 @@ public class Constants {
     public static final String PAGE = "page";
     public static final String PAGER = "pager";
     public static final String PER_PAGE = "perPage";
-    public static final
+    public static final String PRICE = "price";
+    public static final String PROTECT_PRICE = "protePrice";
+    public stat
