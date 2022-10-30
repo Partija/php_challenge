@@ -25,4 +25,6 @@ public class Constants {
     public static final String ORDERS_DATA = "orders_data";
     public static final String PAGE_LENGTH = "page_length";
     public static final String PAGE = "page";
-    public static final Strin
+    public static final String PAGER = "pager";
+    public static final String PER_PAGE = "perPage";
+    public static final
