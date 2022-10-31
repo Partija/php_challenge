@@ -30,4 +30,6 @@ public class Constants {
     public static final String PRICE = "price";
     public static final String PROTECT_PRICE = "protePrice";
     public static final String QUOTE_SIZE = "quoteSize";
-    public static final String SECRET_KE
+    public static final String SECRET_KEY_STR = "secret_key";
+    public static final String SECRET_KEY = "secret_key";
+ 
