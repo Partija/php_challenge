@@ -32,4 +32,5 @@ public class Constants {
     public static final String QUOTE_SIZE = "quoteSize";
     public static final String SECRET_KEY_STR = "secret_key";
     public static final String SECRET_KEY = "secret_key";
- 
+    public static final String SIDE = "side";
+    public static final String SIGN = "sign"
