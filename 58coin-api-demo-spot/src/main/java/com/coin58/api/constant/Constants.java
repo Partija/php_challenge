@@ -35,4 +35,6 @@ public class Constants {
     public static final String SIDE = "side";
     public static final String SIGN = "sign";
     public static final String SINCE = "since";
-    public static final Stri
+    public static final String SIZE = "size";
+    public static final String STATUS = "status";
+    public static final 
