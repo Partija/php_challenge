@@ -38,4 +38,5 @@ public class Constants {
     public static final String SIZE = "size";
     public static final String STATUS = "status";
     public static final String START_DATE = "startDateMillis";
-    public static final St
+    public static final String SINGLE_AVERAGE = "singleAvg";
+    public static final String SL_PRICE = "slPrice";
