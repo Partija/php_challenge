@@ -42,4 +42,6 @@ public class Constants {
     public static final String SL_PRICE = "slPrice";
     public static final String SL_TRIGGER_PRICE = "slTriggerPrice";
     public static final String SP_PRICE = "spPrice";
-    public static final String SP_TRIGGE
+    public static final String SP_TRIGGER_PRICE = "spTriggerPrice";
+    public static final String SYMBOL = "symbol";
+    public st
