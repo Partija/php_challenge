@@ -41,4 +41,5 @@ public class Constants {
     public static final String SINGLE_AVERAGE = "singleAvg";
     public static final String SL_PRICE = "slPrice";
     public static final String SL_TRIGGER_PRICE = "slTriggerPrice";
-    pub
+    public static final String SP_PRICE = "spPrice";
+    public static final String SP_TRIGGE
