@@ -45,4 +45,6 @@ public class Constants {
     public static final String SP_TRIGGER_PRICE = "spTriggerPrice";
     public static final String SYMBOL = "symbol";
     public static final String TIMESTAMP = "timestamp";
-    public static final String TRADE_VALUE = 
+    public static final String TRADE_VALUE = "tradeValue";
+    public static final String TYPE = "type";
+    public static final String WIT
