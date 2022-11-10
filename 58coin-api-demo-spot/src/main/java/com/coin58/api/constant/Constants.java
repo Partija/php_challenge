@@ -47,4 +47,5 @@ public class Constants {
     public static final String TIMESTAMP = "timestamp";
     public static final String TRADE_VALUE = "tradeValue";
     public static final String TYPE = "type";
-    public static final String WIT
+    public static final String WITHDRAW_ID = "withdraw_id";
+    public static final String X_58COIN_APIKEY = "
