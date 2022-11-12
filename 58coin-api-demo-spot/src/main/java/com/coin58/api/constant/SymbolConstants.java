@@ -8,3 +8,7 @@ package com.coin58.api.constant;
 public class SymbolConstants {
 
     public static final String AMPERSAND = "&";
+    public static final String EQUALS_SIGN = "=";
+    public static final String QUESTION_MARK = "?";
+    public static final String UNDERLINE = "_";
+}
