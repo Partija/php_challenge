@@ -50,3 +50,5 @@ public class Constants {
     public static final String WITHDRAW_ID = "withdraw_id";
     public static final String X_58COIN_APIKEY = "X-58COIN-APIKEY";
     public static final String X_58COIN_SIGNATURE = "X-58COIN-SIGNATURE";
+    public static final String X_58COIN_TIMESTAMP = "X-58COIN-TIMESTAMP";
+}
