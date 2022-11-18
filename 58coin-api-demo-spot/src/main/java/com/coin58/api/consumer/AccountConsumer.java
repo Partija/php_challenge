@@ -14,4 +14,8 @@ import java.util.List;
 /**
  * @author coin58 - 2018/3/26.
  */
-@Component("coin58-a
+@Component("coin58-accountConsumer")
+@Slf4j
+public class AccountConsumer {
+
+    public void handleAccount
