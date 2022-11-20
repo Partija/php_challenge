@@ -18,4 +18,5 @@ import java.util.List;
 @Slf4j
 public class AccountConsumer {
 
-    public void handleAccount
+    public void handleAccounts(Response response) throws IOException {
+        String json = response.returnContent()
