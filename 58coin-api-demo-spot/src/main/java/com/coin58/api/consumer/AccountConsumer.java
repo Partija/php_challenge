@@ -19,4 +19,5 @@ import java.util.List;
 public class AccountConsumer {
 
     public void handleAccounts(Response response) throws IOException {
-        String json = response.returnContent()
+        String json = response.returnContent().asString();
+        Coin58Resp<List<Account>> result = JsonUtils.parseJson(j
