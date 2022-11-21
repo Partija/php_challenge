@@ -20,4 +20,6 @@ public class AccountConsumer {
 
     public void handleAccounts(Response response) throws IOException {
         String json = response.returnContent().asString();
-        Coin58Resp<List<Account>> result = JsonUtils.parseJson(j
+        Coin58Resp<List<Account>> result = JsonUtils.parseJson(json, new TypeReference<Coin58Resp<List<Account>>>() {
+        });
+        log.info("Account res
