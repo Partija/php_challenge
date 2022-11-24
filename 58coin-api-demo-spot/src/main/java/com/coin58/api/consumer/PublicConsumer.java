@@ -10,4 +10,10 @@ import lombok.extern.slf4j.Slf4j;
 import org.apache.http.client.fluent.Response;
 import org.springframework.stereotype.Component;
 
-import java.io.IOEx
+import java.io.IOException;
+import java.util.List;
+
+/**
+ * @author coin58 - 2018/3/24.
+ */
+@Component("coin58-publicCon
