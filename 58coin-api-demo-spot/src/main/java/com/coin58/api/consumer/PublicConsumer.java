@@ -16,4 +16,8 @@ import java.util.List;
 /**
  * @author coin58 - 2018/3/24.
  */
-@Component("coin58-publicCon
+@Component("coin58-publicConsumer")
+@Slf4j
+public class PublicConsumer {
+
+    public void handleSpotTicker(Respons
