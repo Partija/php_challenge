@@ -20,4 +20,5 @@ import java.util.List;
 @Slf4j
 public class PublicConsumer {
 
-    public void handleSpotTicker(Respons
+    public void handleSpotTicker(Response response) throws IOException {
+        String json = response.returnConte
