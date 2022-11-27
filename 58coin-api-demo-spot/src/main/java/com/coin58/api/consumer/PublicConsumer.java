@@ -25,4 +25,7 @@ public class PublicConsumer {
         Coin58Resp<List<SpotTicker>> result = JsonUtils.parseJson(json,
                 new TypeReference<Coin58Resp<List<SpotTicker>>>() {
                 });
-      
+        log.info("Spot ticker result [{}]", result);
+    }
+
+    public void handleOrderBook(Resp
