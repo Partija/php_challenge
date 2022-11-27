@@ -23,4 +23,6 @@ public class PublicConsumer {
     public void handleSpotTicker(Response response) throws IOException {
         String json = response.returnContent().asString();
         Coin58Resp<List<SpotTicker>> result = JsonUtils.parseJson(json,
-       
+                new TypeReference<Coin58Resp<List<SpotTicker>>>() {
+                });
+      
