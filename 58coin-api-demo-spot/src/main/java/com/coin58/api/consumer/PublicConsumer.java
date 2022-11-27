@@ -28,4 +28,5 @@ public class PublicConsumer {
         log.info("Spot ticker result [{}]", result);
     }
 
-    public void handleOrderBook(Resp
+    public void handleOrderBook(Response response) throws IOException {
+        String json = respons
