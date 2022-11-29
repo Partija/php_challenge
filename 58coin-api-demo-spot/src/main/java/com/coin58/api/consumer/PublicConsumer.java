@@ -32,4 +32,8 @@ public class PublicConsumer {
         String json = response.returnContent().asString();
         Coin58Resp<OrderBook> result = JsonUtils.parseJson(json,
                 new TypeReference<Coin58Resp<OrderBook>>() {
-    
+                });
+        log.info("Order book result [{}]", result);
+    }
+
+    public void
