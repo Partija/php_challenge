@@ -29,4 +29,5 @@ public class PublicConsumer {
     }
 
     public void handleOrderBook(Response response) throws IOException {
-        String json = respons
+        String json = response.returnContent().asString();
+        Coin58Resp<OrderBook> result = JsonUtils.parseJson(j
