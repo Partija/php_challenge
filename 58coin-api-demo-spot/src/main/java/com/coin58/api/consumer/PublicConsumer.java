@@ -30,4 +30,6 @@ public class PublicConsumer {
 
     public void handleOrderBook(Response response) throws IOException {
         String json = response.returnContent().asString();
-        Coin58Resp<OrderBook> result = JsonUtils.parseJson(j
+        Coin58Resp<OrderBook> result = JsonUtils.parseJson(json,
+                new TypeReference<Coin58Resp<OrderBook>>() {
+    
