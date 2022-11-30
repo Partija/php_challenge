@@ -36,4 +36,5 @@ public class PublicConsumer {
         log.info("Order book result [{}]", result);
     }
 
-    public void
+    public void handleTrades(Response response) throws IOException {
+        String json = response.returnContent().
