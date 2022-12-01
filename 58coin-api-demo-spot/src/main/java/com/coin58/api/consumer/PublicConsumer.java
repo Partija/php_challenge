@@ -37,4 +37,5 @@ public class PublicConsumer {
     }
 
     public void handleTrades(Response response) throws IOException {
-        String json = response.returnContent().
+        String json = response.returnContent().asString();
+        Coin58Resp<JsonNode> result = JsonUtils.parseJso
