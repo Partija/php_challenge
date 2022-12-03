@@ -41,4 +41,6 @@ public class PublicConsumer {
         Coin58Resp<JsonNode> result = JsonUtils.parseJson(json,
                 new TypeReference<Coin58Resp<JsonNode>>() {
                 });
- 
+        log.info("Trades result [{}]", result);
+    }
+}
