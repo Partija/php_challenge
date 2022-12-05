@@ -10,3 +10,6 @@ import java.math.BigDecimal;
  * @date 2017/7/16.
  */
 @Data
+public class NameObjectPair implements NameValuePair {
+
+    private String name;
