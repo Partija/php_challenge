@@ -21,4 +21,9 @@ public class NameObjectPair implements NameValuePair {
     }
 
     @Override
-    public S
+    public String getName() {
+        return this.name;
+    }
+
+    @Override
+    public String getValue() 
