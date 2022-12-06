@@ -16,4 +16,9 @@ public class NameObjectPair implements NameValuePair {
     private Object value;
 
     public NameObjectPair(String name, Object value) {
-        
+        this.name = name;
+        this.value = value;
+    }
+
+    @Override
+    public S
