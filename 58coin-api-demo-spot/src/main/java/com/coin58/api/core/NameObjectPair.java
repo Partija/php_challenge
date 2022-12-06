@@ -13,3 +13,7 @@ import java.math.BigDecimal;
 public class NameObjectPair implements NameValuePair {
 
     private String name;
+    private Object value;
+
+    public NameObjectPair(String name, Object value) {
+        
