@@ -30,4 +30,5 @@ public class NameObjectPair implements NameValuePair {
         if (value == null) {
             return null;
         }
-        if (value ins
+        if (value instanceof BigDecimal) {
+            return ((BigDecimal) value).stripTrailingZeros().toP
