@@ -26,4 +26,8 @@ public class NameObjectPair implements NameValuePair {
     }
 
     @Override
-    public String getValue() 
+    public String getValue() {
+        if (value == null) {
+            return null;
+        }
+        if (value ins
