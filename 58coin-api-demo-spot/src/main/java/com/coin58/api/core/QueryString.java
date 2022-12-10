@@ -11,4 +11,7 @@ import java.util.List;
  */
 public class QueryString {
     private StringBuilder sb;
-    private 
+    private List<NameValuePair> queryStringList;
+
+    public QueryString() {
+        this.q
