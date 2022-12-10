@@ -7,4 +7,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author coin58 - 2018/3/
+ * @author coin58 - 2018/3/26.
+ */
+public class QueryString {
+    private StringBuilder sb;
+    private 
