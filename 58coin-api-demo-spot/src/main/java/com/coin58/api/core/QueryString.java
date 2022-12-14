@@ -18,4 +18,7 @@ public class QueryString {
     }
 
     public static QueryString builder() {
-   
+        QueryString qs = new QueryString();
+        qs.sb = new StringBuilder();
+        return qs;
+    }
