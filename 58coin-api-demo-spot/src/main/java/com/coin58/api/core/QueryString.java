@@ -14,4 +14,8 @@ public class QueryString {
     private List<NameValuePair> queryStringList;
 
     public QueryString() {
-        this.q
+        this.queryStringList = new ArrayList<>();
+    }
+
+    public static QueryString builder() {
+   
