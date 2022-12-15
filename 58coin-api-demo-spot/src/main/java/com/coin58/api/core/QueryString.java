@@ -22,3 +22,6 @@ public class QueryString {
         qs.sb = new StringBuilder();
         return qs;
     }
+
+    public QueryString query(String name, Object value) {
+        this.queryStringList
