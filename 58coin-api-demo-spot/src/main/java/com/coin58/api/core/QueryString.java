@@ -24,4 +24,8 @@ public class QueryString {
     }
 
     public QueryString query(String name, Object value) {
-        this.queryStringList
+        this.queryStringList.add(new NameObjectPair(name, value));
+        return this;
+    }
+
+    public Li
