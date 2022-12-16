@@ -36,4 +36,7 @@ public class QueryString {
         boolean first = true;
         for (NameValuePair nameValuePair : this.queryStringList) {
             if (first) {
-                this.sb.append(Symbo
+                this.sb.append(SymbolConstants.QUESTION_MARK);
+                first = false;
+            } else {
+      
