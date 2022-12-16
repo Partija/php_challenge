@@ -34,4 +34,6 @@ public class QueryString {
 
     public String build() {
         boolean first = true;
-        for (NameValuePair 
+        for (NameValuePair nameValuePair : this.queryStringList) {
+            if (first) {
+                this.sb.append(Symbo
