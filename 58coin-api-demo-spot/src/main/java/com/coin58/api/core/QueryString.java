@@ -28,4 +28,8 @@ public class QueryString {
         return this;
     }
 
-    public Li
+    public List<NameValuePair> getPairList() {
+        return this.queryStringList;
+    }
+
+    pub
