@@ -32,4 +32,6 @@ public class QueryString {
         return this.queryStringList;
     }
 
-    pub
+    public String build() {
+        boolean first = true;
+        for (NameValuePair 
