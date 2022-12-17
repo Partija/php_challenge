@@ -39,4 +39,6 @@ public class QueryString {
                 this.sb.append(SymbolConstants.QUESTION_MARK);
                 first = false;
             } else {
-      
+                this.sb.append(SymbolConstants.AMPERSAND);
+            }
+    
