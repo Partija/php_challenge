@@ -41,4 +41,4 @@ public class QueryString {
             } else {
                 this.sb.append(SymbolConstants.AMPERSAND);
             }
-    
+            this.sb.append(nameValuePair.getName()).append(SymbolConstants.EQUALS_SIGN).append(nameValu
