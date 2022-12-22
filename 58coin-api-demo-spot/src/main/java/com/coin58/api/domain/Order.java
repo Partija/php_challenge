@@ -50,3 +50,22 @@ public class Order {
     /**
      * 订单类型 0:限价单 1:市价单
      */
+    private Byte orderType;
+    /**
+     * 成交状态 0:未成交 1:部分成交 2:完全成交 3:撤单中 -1:已撤单
+     */
+    private Byte status;
+    /**
+     * 计价成交量
+     */
+    private BigDecimal executedValue;
+    /**
+     * 创建时间
+     */
+    private Date createTime;
+    /**
+     * 更新时间
+     */
+    private Date modifyTime;
+
+}
