@@ -6,4 +6,8 @@ package com.coin58.api.enums;
 public enum OrderStatusEnum {
     RECEIVED("received"),
     ACTIVE("active"),
-    FINISHED(
+    FINISHED("finished"),
+    CANCELING("canceling"),
+    CANCELLED("cancelled"),
+    ;
+    pu
