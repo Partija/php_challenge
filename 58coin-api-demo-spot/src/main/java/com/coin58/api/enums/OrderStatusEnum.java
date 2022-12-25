@@ -10,4 +10,9 @@ public enum OrderStatusEnum {
     CANCELING("canceling"),
     CANCELLED("cancelled"),
     ;
-    pu
+    public String value;
+
+    OrderStatusEnum(String value) {
+        this.value = value;
+    }
+}
