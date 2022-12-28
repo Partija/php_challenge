@@ -5,3 +5,10 @@ package com.coin58.api.enums;
  */
 public enum SideEnum {
     BUY("buy"),
+
+    SELL("sell");
+
+    public String value;
+
+    SideEnum(String value) {
+        this.va
