@@ -11,4 +11,6 @@ public enum SideEnum {
     public String value;
 
     SideEnum(String value) {
-        this.va
+        this.value = value;
+    }
+}
