@@ -7,4 +7,7 @@ import lombok.Data;
  */
 @Data
 public class Site {
-    private St
+    private String name;
+    private String host;
+    private String protocol;
+    private Strin
