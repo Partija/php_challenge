@@ -3,4 +3,8 @@ package com.coin58.api.enums;
 import lombok.Data;
 
 /**
- * @auth
+ * @author coin58 - 2018/3/24.
+ */
+@Data
+public class Site {
+    private St
