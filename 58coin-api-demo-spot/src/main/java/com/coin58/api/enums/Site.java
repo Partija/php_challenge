@@ -10,4 +10,7 @@ public class Site {
     private String name;
     private String host;
     private String protocol;
-    private Strin
+    private String url;
+
+    public Site(String name, String host, String protocol) {
+        this.name = name;
