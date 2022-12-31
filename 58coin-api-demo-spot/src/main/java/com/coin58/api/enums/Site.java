@@ -14,3 +14,6 @@ public class Site {
 
     public Site(String name, String host, String protocol) {
         this.name = name;
+        this.host = host;
+        this.protocol = protocol;
+      
