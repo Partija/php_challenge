@@ -16,4 +16,6 @@ public class Site {
         this.name = name;
         this.host = host;
         this.protocol = protocol;
-      
+        this.url = protocol.concat("://").concat(host).concat("/");
+    }
+}
