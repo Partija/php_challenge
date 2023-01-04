@@ -52,3 +52,42 @@
 //        this.orderService = orderService;
 //        this.accountConsumer = accountConsumer;
 //        this.orderConsumer = orderConsumer;
+//        this.apiExecutor = apiExecutor;
+//    }
+//
+//    @PostConstruct
+//    public void executeOnce() {
+//        try {
+//            // public
+//            // 行情
+//            this.publicConsumer.handleSpotTicker(executor.execute(publicService.spotTicker("ltc_btc")));
+//            // 最近成交记录
+//            this.publicConsumer.handleTrades(executor.execute(publicService.spotTrades("ltc_btc")));
+//            // 深度
+//            this.publicConsumer.handleOrderBook(executor.execute(publicService.spotOrderBook("ltc_btc")));
+//
+//            // account
+//            // 用户资产
+//            this.accountConsumer.handleAccounts(executor.execute(accountService.account()));
+//
+//            // order
+//            // 下单
+//            this.orderConsumer.handlePlaceOrder(executor.execute(orderService.placeLimitOrder("ltc_btc", SideEnum
+//                    .BUY, "0.001", "0.001", "1")));
+//            // 获取一个订单
+//            this.orderConsumer.handleGetOrder(executor.execute(orderService.getOrder("ltc_btc", "2")));
+//
+//            // 撤销一个订单
+//            this.orderConsumer.handleCancelOrder(executor.execute(orderService.cancelOrder("ltc_btc", "2")));
+//
+//            // 订单列表
+//            this.orderConsumer.handleOrders(executor.execute(orderService.orders("ltc_btc", OrderStatusEnum.ACTIVE,
+//                    100)));
+//
+//            // 交易历史
+//            this.orderConsumer.handleOrderTrades(executor.execute(orderService.orderTrades("ltc_btc", "2", 60)));
+//        } catch (IOException e) {
+//            log.error("Error: ", e);
+//        }
+//    }
+//}
