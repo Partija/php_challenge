@@ -3,4 +3,9 @@ package com.coin58.api.response;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import
+import lombok.NoArgsConstructor;
+import lombok.ToString;
+
+/**
+ * {
+ * "order_id": "4303100
