@@ -9,4 +9,9 @@ import lombok.ToString;
  * @author coin58 - 2018/3/26.
  */
 @Data
-@NoArgsConst
+@NoArgsConstructor
+@AllArgsConstructor
+@ToString
+public class Error {
+    private int code;
+    private String 
