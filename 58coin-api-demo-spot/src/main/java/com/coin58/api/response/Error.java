@@ -14,4 +14,5 @@ import lombok.ToString;
 @ToString
 public class Error {
     private int code;
-    private String 
+    private String message;
+}
