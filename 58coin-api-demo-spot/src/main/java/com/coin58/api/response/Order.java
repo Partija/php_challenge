@@ -16,4 +16,6 @@ import lombok.ToString;
  * "price": "0.019708",
  * "amount": "0.322",
  * "base_filled": "0.0",
- * "q
+ * "quote_filled": "0.0",
+ * "status": "received",
+ * "created_time": 152114215
