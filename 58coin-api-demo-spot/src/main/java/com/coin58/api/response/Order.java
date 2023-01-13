@@ -12,4 +12,8 @@ import lombok.ToString;
  * "client_oid": "...",
  * "symbol": "LTC_BTC",
  * "type": "limit",
- * "side"
+ * "side": "buy",
+ * "price": "0.019708",
+ * "amount": "0.322",
+ * "base_filled": "0.0",
+ * "q
