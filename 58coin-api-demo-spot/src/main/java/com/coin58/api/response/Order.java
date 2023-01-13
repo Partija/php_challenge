@@ -8,4 +8,8 @@ import lombok.ToString;
 
 /**
  * {
- * "order_id": "4303100
+ * "order_id": "4303100732",
+ * "client_oid": "...",
+ * "symbol": "LTC_BTC",
+ * "type": "limit",
+ * "side"
