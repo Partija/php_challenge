@@ -26,3 +26,7 @@ import lombok.ToString;
 @ToString
 @Data
 @NoArgsConstructor
+@AllArgsConstructor
+public class Order {
+    @JsonProperty("order_id")
+    private Strin
