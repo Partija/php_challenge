@@ -18,4 +18,11 @@ import lombok.ToString;
  * "base_filled": "0.0",
  * "quote_filled": "0.0",
  * "status": "received",
- * "created_time": 152114215
+ * "created_time": 1521142156000
+ * }
+ *
+ * @author coin58 - 2018/3/26.
+ */
+@ToString
+@Data
+@NoArgsConstructor
