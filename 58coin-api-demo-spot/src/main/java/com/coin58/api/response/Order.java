@@ -29,4 +29,7 @@ import lombok.ToString;
 @AllArgsConstructor
 public class Order {
     @JsonProperty("order_id")
-    private Strin
+    private String orderId;
+    @JsonProperty("client_oid")
+    private String clientOid;
+    p
