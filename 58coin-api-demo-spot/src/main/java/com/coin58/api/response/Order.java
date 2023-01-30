@@ -35,4 +35,7 @@ public class Order {
     private String symbol;
     private String type;
     private String side;
-    private Strin
+    private String price;
+    private String amount;
+    @JsonProperty("base_filled")
+    private St
