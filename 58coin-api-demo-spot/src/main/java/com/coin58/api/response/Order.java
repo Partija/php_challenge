@@ -38,4 +38,6 @@ public class Order {
     private String price;
     private String amount;
     @JsonProperty("base_filled")
-    private St
+    private String baseFilled;
+    @JsonProperty("quote_filled")
+    private String quoteFill
