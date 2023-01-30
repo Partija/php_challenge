@@ -32,4 +32,7 @@ public class Order {
     private String orderId;
     @JsonProperty("client_oid")
     private String clientOid;
-    p
+    private String symbol;
+    private String type;
+    private String side;
+    private Strin
