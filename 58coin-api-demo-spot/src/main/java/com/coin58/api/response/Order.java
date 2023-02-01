@@ -40,4 +40,7 @@ public class Order {
     @JsonProperty("base_filled")
     private String baseFilled;
     @JsonProperty("quote_filled")
-    private String quoteFill
+    private String quoteFilled;
+    private String status;
+    @JsonProperty("created_time")
+    private long createdTime;
