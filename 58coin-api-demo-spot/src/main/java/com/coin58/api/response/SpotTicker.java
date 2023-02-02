@@ -13,4 +13,7 @@ import lombok.NoArgsConstructor;
  * // Current best bid price
  * "bid": "0.019983",
  * // Current best ask price
- * "ask"
+ * "ask": "0.019984",
+ * // The price at which the last trade executed
+ * "last": "0.019984",
+ * "chan
