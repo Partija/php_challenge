@@ -8,3 +8,5 @@ import lombok.NoArgsConstructor;
 /**
  * {
  * "symbol": "LTC_BTC",
+ * // The timestamp at which this information was valid
+ * "time": 1512744759000
