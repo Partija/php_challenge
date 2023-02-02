@@ -9,4 +9,8 @@ import lombok.NoArgsConstructor;
  * {
  * "symbol": "LTC_BTC",
  * // The timestamp at which this information was valid
- * "time": 1512744759000
+ * "time": 1512744759000,
+ * // Current best bid price
+ * "bid": "0.019983",
+ * // Current best ask price
+ * "ask"
