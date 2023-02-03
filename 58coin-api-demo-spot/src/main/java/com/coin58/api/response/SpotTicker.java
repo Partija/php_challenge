@@ -16,4 +16,7 @@ import lombok.NoArgsConstructor;
  * "ask": "0.019984",
  * // The price at which the last trade executed
  * "last": "0.019984",
- * "chan
+ * "change": "4.02",
+ * // Open price of the last 24 hours
+ * "open": "0.019223",
+ * // High
