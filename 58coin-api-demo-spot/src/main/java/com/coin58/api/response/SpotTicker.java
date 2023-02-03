@@ -19,4 +19,7 @@ import lombok.NoArgsConstructor;
  * "change": "4.02",
  * // Open price of the last 24 hours
  * "open": "0.019223",
- * // High
+ * // Highest price of the last 24 hours
+ * "high": "0.020268",
+ * // Lowest price of the last 24 hours
+ * "lo
