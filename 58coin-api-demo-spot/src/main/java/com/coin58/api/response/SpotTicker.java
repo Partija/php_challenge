@@ -22,4 +22,7 @@ import lombok.NoArgsConstructor;
  * // Highest price of the last 24 hours
  * "high": "0.020268",
  * // Lowest price of the last 24 hours
- * "lo
+ * "low": "0.019107",
+ * // of the last 24 hours
+ * "volume": "1425.391",
+ * // of t
