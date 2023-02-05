@@ -29,4 +29,9 @@ import lombok.NoArgsConstructor;
  * "quote_volume": "28.046991116"
  * }
  *
- * @author coin58 - 201
+ * @author coin58 - 2018/3/26.
+ */
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class SpotTicker
