@@ -34,4 +34,8 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class SpotTicker
+public class SpotTicker {
+    private String symbol;
+    private long time;
+    private String bid;
+    p
