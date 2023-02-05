@@ -25,4 +25,8 @@ import lombok.NoArgsConstructor;
  * "low": "0.019107",
  * // of the last 24 hours
  * "volume": "1425.391",
- * // of t
+ * // of the last 24 hours
+ * "quote_volume": "28.046991116"
+ * }
+ *
+ * @author coin58 - 201
