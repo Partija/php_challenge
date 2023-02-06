@@ -38,4 +38,7 @@ public class SpotTicker {
     private String symbol;
     private long time;
     private String bid;
-    p
+    private String ask;
+    private String last;
+    private String change;
+  
