@@ -41,4 +41,8 @@ public class SpotTicker {
     private String ask;
     private String last;
     private String change;
-  
+    private String open;
+    private String high;
+    private String low;
+    private String volume;
+    
