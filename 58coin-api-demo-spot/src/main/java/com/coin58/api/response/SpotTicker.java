@@ -45,4 +45,6 @@ public class SpotTicker {
     private String high;
     private String low;
     private String volume;
-    
+    @JsonProperty("quote_volume")
+    private String quoteVolume;
+}
