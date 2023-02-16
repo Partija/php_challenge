@@ -23,4 +23,9 @@ import static com.fasterxml.jackson.databind.DeserializationFeature.ACCEPT_EMPTY
  * @date 2017/10/11
  */
 @Slf4j
-public class JsonUti
+public class JsonUtils {
+
+    /**
+     * 不输出value为空的结点
+     */
+    private static 
