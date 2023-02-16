@@ -16,4 +16,11 @@ import org.apache.commons.lang3.StringUtils;
 import java.io.IOException;
 import java.math.BigDecimal;
 
-import static com.fasterxml.jackson.databind.DeserializationFeature.ACCEPT_EMPTY_STRING
+import static com.fasterxml.jackson.databind.DeserializationFeature.ACCEPT_EMPTY_STRING_AS_NULL_OBJECT;
+
+/**
+ * @author coin58
+ * @date 2017/10/11
+ */
+@Slf4j
+public class JsonUti
