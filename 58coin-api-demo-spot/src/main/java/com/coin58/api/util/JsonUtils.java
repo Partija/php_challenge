@@ -29,4 +29,6 @@ public class JsonUtils {
      * 不输出value为空的结点
      */
     private static final ObjectMapper OBJECT_MAPPER = new ObjectMapper()
-            .setSeria
+            .setSerializationInclusion(Include.NON_NULL)
+            .enable(ACCEPT_EMPTY_STRING_AS_NULL_OBJECT)
+            .confi
