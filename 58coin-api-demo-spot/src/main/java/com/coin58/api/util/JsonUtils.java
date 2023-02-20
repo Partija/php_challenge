@@ -31,4 +31,5 @@ public class JsonUtils {
     private static final ObjectMapper OBJECT_MAPPER = new ObjectMapper()
             .setSerializationInclusion(Include.NON_NULL)
             .enable(ACCEPT_EMPTY_STRING_AS_NULL_OBJECT)
-            .confi
+            .configure(JsonParser.Feature.ALLOW_UNQUOTED_FIELD_NAMES, true)
+            .configure(D
