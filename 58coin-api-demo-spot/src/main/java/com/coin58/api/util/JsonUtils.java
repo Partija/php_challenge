@@ -28,4 +28,5 @@ public class JsonUtils {
     /**
      * 不输出value为空的结点
      */
-    private static 
+    private static final ObjectMapper OBJECT_MAPPER = new ObjectMapper()
+            .setSeria
