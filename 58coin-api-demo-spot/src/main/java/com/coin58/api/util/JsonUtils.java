@@ -36,4 +36,5 @@ public class JsonUtils {
             .configure(Feature.ALLOW_SINGLE_QUOTES, true)
             // BigDecimal要去尾零和写成string
             .registerModule(new SimpleModule().addSerializer(BigDecimal.class, new JsonSerializer<BigDecimal>() {
-     
+                @Override
+                public void serialize(BigDecimal value, JsonGenerator gen
