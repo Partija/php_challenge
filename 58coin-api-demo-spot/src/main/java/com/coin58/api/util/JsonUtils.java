@@ -32,4 +32,5 @@ public class JsonUtils {
             .setSerializationInclusion(Include.NON_NULL)
             .enable(ACCEPT_EMPTY_STRING_AS_NULL_OBJECT)
             .configure(JsonParser.Feature.ALLOW_UNQUOTED_FIELD_NAMES, true)
-            .configure(D
+            .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false)
+            .configure(Feature.ALL
