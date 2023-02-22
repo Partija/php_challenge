@@ -35,4 +35,5 @@ public class JsonUtils {
             .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false)
             .configure(Feature.ALLOW_SINGLE_QUOTES, true)
             // BigDecimal要去尾零和写成string
-            .registerModule(ne
+            .registerModule(new SimpleModule().addSerializer(BigDecimal.class, new JsonSerializer<BigDecimal>() {
+     
