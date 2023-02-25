@@ -39,4 +39,5 @@ public class JsonUtils {
                 @Override
                 public void serialize(BigDecimal value, JsonGenerator gen, SerializerProvider serializers)
                         throws IOException {
-     
+                    gen.writeString(value.stripTrailingZeros()
+                            .to
