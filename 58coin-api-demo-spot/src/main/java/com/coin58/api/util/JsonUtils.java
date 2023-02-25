@@ -40,4 +40,8 @@ public class JsonUtils {
                 public void serialize(BigDecimal value, JsonGenerator gen, SerializerProvider serializers)
                         throws IOException {
                     gen.writeString(value.stripTrailingZeros()
-                            .to
+                            .toPlainString());
+                }
+            }));
+
+    public static String toJ
