@@ -37,4 +37,6 @@ public class JsonUtils {
             // BigDecimal要去尾零和写成string
             .registerModule(new SimpleModule().addSerializer(BigDecimal.class, new JsonSerializer<BigDecimal>() {
                 @Override
-                public void serialize(BigDecimal value, JsonGenerator gen
+                public void serialize(BigDecimal value, JsonGenerator gen, SerializerProvider serializers)
+                        throws IOException {
+     
