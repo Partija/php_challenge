@@ -44,4 +44,7 @@ public class JsonUtils {
                 }
             }));
 
-    public static String toJ
+    public static String toJSONString(Object o) {
+        try {
+            return OBJECT_MAPPER.writeValueAsString(o);
+  
