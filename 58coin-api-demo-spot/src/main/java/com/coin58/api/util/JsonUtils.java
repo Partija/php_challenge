@@ -47,4 +47,5 @@ public class JsonUtils {
     public static String toJSONString(Object o) {
         try {
             return OBJECT_MAPPER.writeValueAsString(o);
-  
+        } catch (Throwable e) {
+            log.error("convert json error ", e.getMessage()
