@@ -48,4 +48,9 @@ public class JsonUtils {
         try {
             return OBJECT_MAPPER.writeValueAsString(o);
         } catch (Throwable e) {
-            log.error("convert json error ", e.getMessage()
+            log.error("convert json error ", e.getMessage());
+        }
+        return StringUtils.EMPTY;
+    }
+
+    public static <T> T parseJs
