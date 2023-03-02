@@ -53,4 +53,5 @@ public class JsonUtils {
         return StringUtils.EMPTY;
     }
 
-    public static <T> T parseJs
+    public static <T> T parseJson(String json, TypeReference typeReference) throws IOException {
+        retur
