@@ -54,4 +54,7 @@ public class JsonUtils {
     }
 
     public static <T> T parseJson(String json, TypeReference typeReference) throws IOException {
-        retur
+        return OBJECT_MAPPER.readValue(json, typeReference);
+    }
+
+}
