@@ -11,4 +11,13 @@ import org.springframework.util.Base64Utils;
 
 import java.util.ArrayList;
 import java.util.Comparator;
-import jav
+import java.util.List;
+
+/**
+ * 字符串工具类
+ *
+ * @author coin58
+ * @date 2017/5/5
+ */
+@Slf4j
+public class S
