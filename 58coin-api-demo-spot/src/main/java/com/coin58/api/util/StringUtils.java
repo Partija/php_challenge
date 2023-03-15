@@ -20,4 +20,6 @@ import java.util.List;
  * @date 2017/5/5
  */
 @Slf4j
-public class S
+public class StringUtils extends org.apache.commons.lang3.StringUtils {
+
+    private static byte[] buildSignSHA256Hex(Li
