@@ -23,4 +23,5 @@ import java.util.List;
 public class StringUtils extends org.apache.commons.lang3.StringUtils {
 
     private static byte[] buildSignSHA256Hex(List<NameValuePair> params, String secretKey, String timestamp) {
-        params.sort(Compara
+        params.sort(Comparator.comparing(NameValuePair::getName));
+        params.add(new NameObjectPair(Co
