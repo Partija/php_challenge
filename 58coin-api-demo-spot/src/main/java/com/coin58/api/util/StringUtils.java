@@ -24,4 +24,5 @@ public class StringUtils extends org.apache.commons.lang3.StringUtils {
 
     private static byte[] buildSignSHA256Hex(List<NameValuePair> params, String secretKey, String timestamp) {
         params.sort(Comparator.comparing(NameValuePair::getName));
-        params.add(new NameObjectPair(Co
+        params.add(new NameObjectPair(Constants.API_SECRET, secretKey));
+        params.add(new NameObjectPair(Const
