@@ -27,4 +27,7 @@ public class StringUtils extends org.apache.commons.lang3.StringUtils {
         params.add(new NameObjectPair(Constants.API_SECRET, secretKey));
         params.add(new NameObjectPair(Constants.TIMESTAMP, timestamp));
         String stringForSign = buildStringForSign(params, secretKey);
-        return HmacUtils.getHmacSha256(secretKey.getBytes(
+        return HmacUtils.getHmacSha256(secretKey.getBytes()).doFinal(stringForSign.getBytes());
+    }
+
+    public static String base
