@@ -30,4 +30,4 @@ public class StringUtils extends org.apache.commons.lang3.StringUtils {
         return HmacUtils.getHmacSha256(secretKey.getBytes()).doFinal(stringForSign.getBytes());
     }
 
-    public static String base
+    public static String base64Sha256Hex(List<NameValuePair> params, String secretKey, String timestamp) {
