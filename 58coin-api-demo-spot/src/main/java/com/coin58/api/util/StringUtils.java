@@ -31,4 +31,10 @@ public class StringUtils extends org.apache.commons.lang3.StringUtils {
     }
 
     public static String base64Sha256Hex(List<NameValuePair> params, String secretKey, String timestamp) {
-        return Base64Utils.encodeToString(new String(Hex.encodeHex(buildSignSHA256Hex(param
+        return Base64Utils.encodeToString(new String(Hex.encodeHex(buildSignSHA256Hex(params, secretKey, timestamp), false)).getBytes());
+    }
+
+    /**
+     * 生成用于加密的字符串
+     *
+     * @
