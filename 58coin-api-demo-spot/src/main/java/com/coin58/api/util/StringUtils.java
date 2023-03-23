@@ -37,4 +37,7 @@ public class StringUtils extends org.apache.commons.lang3.StringUtils {
     /**
      * 生成用于加密的字符串
      *
-     * @
+     * @param params    请求参数
+     * @param secretKey key
+     * @return 用于加密的字符串
+  
