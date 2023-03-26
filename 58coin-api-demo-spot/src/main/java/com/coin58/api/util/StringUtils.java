@@ -46,4 +46,6 @@ public class StringUtils extends org.apache.commons.lang3.StringUtils {
         List<String> paramsList = new ArrayList<>();
         for (NameValuePair pair : params) {
             paramsList.add(pair.getName() + SymbolConstants.EQUALS_SIGN + pair.getValue());
-      
+        }
+        res.append(join(paramsList, SymbolConstants.AMPERSAND));
+        return res.toStrin
