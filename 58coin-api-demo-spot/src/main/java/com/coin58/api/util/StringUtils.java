@@ -43,4 +43,6 @@ public class StringUtils extends org.apache.commons.lang3.StringUtils {
      */
     private static String buildStringForSign(List<NameValuePair> params, String secretKey) {
         StringBuilder res = new StringBuilder();
-        List<String> par
+        List<String> paramsList = new ArrayList<>();
+        for (NameValuePair pair : params) {
+            para
