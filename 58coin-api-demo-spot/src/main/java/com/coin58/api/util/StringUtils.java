@@ -51,4 +51,5 @@ public class StringUtils extends org.apache.commons.lang3.StringUtils {
         return res.toString();
     }
 
-    public static String buildQueryString(List<NameValuePair> para
+    public static String buildQueryString(List<NameValuePair> params) {
+        StringBuilder queryString = new StringBuilder(SymbolCon
