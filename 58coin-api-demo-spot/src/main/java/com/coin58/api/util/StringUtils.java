@@ -48,4 +48,7 @@ public class StringUtils extends org.apache.commons.lang3.StringUtils {
             paramsList.add(pair.getName() + SymbolConstants.EQUALS_SIGN + pair.getValue());
         }
         res.append(join(paramsList, SymbolConstants.AMPERSAND));
-        return res.toStrin
+        return res.toString();
+    }
+
+    public static String buildQueryString(List<NameValuePair> para
