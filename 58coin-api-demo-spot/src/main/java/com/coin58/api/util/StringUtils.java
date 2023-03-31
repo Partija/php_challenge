@@ -52,4 +52,6 @@ public class StringUtils extends org.apache.commons.lang3.StringUtils {
     }
 
     public static String buildQueryString(List<NameValuePair> params) {
-        StringBuilder queryString = new StringBuilder(SymbolCon
+        StringBuilder queryString = new StringBuilder(SymbolConstants.QUESTION_MARK);
+        List<String> paramsList = new ArrayList<>();
+        
