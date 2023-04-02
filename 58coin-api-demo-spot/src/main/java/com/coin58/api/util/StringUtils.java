@@ -56,4 +56,6 @@ public class StringUtils extends org.apache.commons.lang3.StringUtils {
         List<String> paramsList = new ArrayList<>();
         params.forEach(x -> paramsList.add(x.getName() + SymbolConstants.EQUALS_SIGN + x.getValue()));
         return queryString.append(StringUtils.join(paramsList, SymbolConstants.AMPERSAND))
- 
+                .toString();
+    }
+}
