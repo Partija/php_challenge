@@ -4,4 +4,4 @@
  ____/ / /_/ / /___/ /_/ // // /|  /
 /_____/\____/\____/\____/___/_/ |_/
 
-${Ansi.GREEN} :: Spring Boot ::${spring-boo
+${Ansi.GREEN} :: Spring Boot ::${spring-boot.formatted-version} ${Ansi.DEFAULT}
