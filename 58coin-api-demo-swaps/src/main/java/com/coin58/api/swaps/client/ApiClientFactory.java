@@ -40,3 +40,8 @@ public class ApiClientFactory {
     public ApiSocketClient newWebSocketClient() {
         return new ApiSocketClientImpl(this.apiKey, this.apiSecret, ApiServiceGenerator.getSharedClient());
     }
+
+    public ApiSocketClient newWebSocketClient(String socketUrl) {
+        return new ApiSocketClientImpl(this.apiKey, this.apiSecret, ApiServiceGenerator.getSharedClient(), socketUrl);
+    }
+}
