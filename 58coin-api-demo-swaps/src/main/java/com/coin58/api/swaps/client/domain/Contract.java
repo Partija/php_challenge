@@ -10,3 +10,25 @@ public class Contract {
 
     private Long id;
     private String name;
+    private String unit;
+    private Long value;
+    private BigDecimal maxLeverage;
+    private BigDecimal maintenanceMarginRate;
+    private BigDecimal takerCommision;
+    private BigDecimal makerCommision;
+
+
+    @Override
+    public String toString() {
+        return "Contract{" + //
+                "id=" + id + //
+                ", name='" + name + '\'' + //
+                ", unit='" + unit + '\'' + //
+                ", value=" + value + //
+                ", maxLeverage=" + maxLeverage + //
+                ", takerCommision=" + takerCommision + //
+                ", makerCommision=" + makerCommision + //
+                ", maintenanceMarginRate=" + maintenanceMarginRate + //
+                '}';
+    }
+}
