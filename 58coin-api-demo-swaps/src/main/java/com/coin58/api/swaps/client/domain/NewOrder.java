@@ -8,4 +8,7 @@ import lombok.Data;
 import java.math.BigDecimal;
 
 @Data
-pu
+public class NewOrder {
+
+    private long contractId;
+    private OrderTypeEnum or
