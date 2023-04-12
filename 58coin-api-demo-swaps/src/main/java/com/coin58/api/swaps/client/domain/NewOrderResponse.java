@@ -1,0 +1,17 @@
+
+package com.coin58.api.swaps.client.domain;
+
+import lombok.Data;
+
+import java.io.Serializable;
+
+@Data
+public class NewOrderResponse implements Serializable {
+
+    private Long orderId;
+
+    @Override
+    public String toString() {
+        return "NewOrder{" + "orderId='" + orderId + '\'' + '}';
+    }
+}

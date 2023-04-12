@@ -15,4 +15,5 @@ public class NewOrder {
     private SideEnum side;
     private int size;
     private BigDecimal price;
-    priv
+    private CloseTypeEnum closeType;
+}
