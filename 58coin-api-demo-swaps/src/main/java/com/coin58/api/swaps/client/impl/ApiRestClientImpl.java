@@ -133,3 +133,19 @@ public class ApiRestClientImpl implements ApiRestClient {
     /**
      * 获取账单信息
      * @param action
+     * @param startDate
+     * @param endDate
+     * @param curPage
+     * @return
+     */
+    @Override
+    public List<LedgerResponse> getLedgerList(Long contractId, Integer action,
+                                              String startDate, String endDate,
+                                              Integer curPage, Integer pageSize) {
+        return ApiServiceGenerator.executeSync(apiService.getLedgerList(contractId, action,
+                startDate, endDate,
+                curPage, pageSize));
+    }
+
+
+}
