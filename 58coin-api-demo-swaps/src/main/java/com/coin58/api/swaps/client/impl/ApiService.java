@@ -56,3 +56,69 @@ public interface ApiService {
     Call<NewOrderResponse> newOrder(@Field("contractId") long contractId, @Field("type") Integer type,
                                     @Field("side") Integer side, @Field("size") Integer size,
                                     @Field("price") String price, @Field("close") Integer close);
+
+    @FormUrlEncoded
+    @Headers(ApiConstants.ENDPOINT_HEADER_API_KEY)
+    @POST("/v1/swaps/order/cancel")
+    Call<JSONObject> cancelOrder(@Field("productId") long productId, @Field("orderId") long orderId);
+
+    @FormUrlEncoded
+    @Headers(ApiConstants.ENDPOINT_HEADER_API_KEY)
+    @POST("/v1/swaps/order/batch/cancel")
+    Call<JSONObject> cancelOrderBatch(@Field("productId") Long productId);
+
+//    @Headers({ApiConstants.HEADER_CONTENT_TYPE_JSON, ApiConstants.ENDPOINT_HEADER_API_KEY})
+//    @POST("/v1/usdt/order/close/all")
+//    Call<JSONObject> closeAll();
+
+    @Headers({ApiConstants.HEADER_CONTENT_TYPE_JSON, ApiConstants.ENDPOINT_HEADER_API_KEY})
+    @GET("/v1/swaps/order/list")
+    Call<List<OrderListResponse>> getOrderList(@Query("contractId") long contractId, @Query("orderId") Long orderId, @Query("status") String status,
+                                               @Query("beginDate") String beginDate, @Query("endDate") String endDate,
+                                               @Query("page") Integer page, @Query("pageSize") Integer pageSize);
+
+    @Headers({ApiConstants.HEADER_CONTENT_TYPE_JSON, ApiConstants.ENDPOINT_HEADER_API_KEY})
+    @GET("/v1/swaps/order/fill/list")
+    Call<List<FillListResponse>> getOrderFillList(@Query("contractId") long contractId,
+                                               @Query("beginDate") String beginDate, @Query("endDate") String endDate,
+                                               @Query("page") Integer page, @Query("pageSize") Integer pageSize);
+
+    @FormUrlEncoded
+    @Headers(ApiConstants.ENDPOINT_HEADER_API_KEY)
+    @POST("/v1/swaps/order/place/planOrder")
+    Call<JSONObject> placePlanOrder(@Field("contractId") long contractId, @Field("side") Integer side,
+                                    @Field("triggerPrice") BigDecimal triggerPrice, @Field("size") Integer size,
+                                    @Field("price") String price);
+
+    @Headers({ApiConstants.HEADER_CONTENT_TYPE_JSON, ApiConstants.ENDPOINT_HEADER_API_KEY})
+    @GET("/v1/swaps/position/get")
+    Call<PositionResponse> getPositionList(@Query("contractId") long contractId);
+
+    @FormUrlEncoded
+    @Headers(ApiConstants.ENDPOINT_HEADER_API_KEY)
+    @POST("/v1/swaps/order/plan/cancel")
+    Call<JSONObject> cancelPlan(@Field("planOrderId") long planOrderId, @Field("contractId") long contractId);
+
+    @FormUrlEncoded
+    @Headers(ApiConstants.ENDPOINT_HEADER_API_KEY)
+    @POST("/v1/swaps/order/plan/batch/cancel")
+    Call<JSONObject> cancelPlanBatch(@Field("contractId") Long contractId);
+
+    @Headers({ApiConstants.HEADER_CONTENT_TYPE_JSON, ApiConstants.ENDPOINT_HEADER_API_KEY})
+    @GET("/v1/swaps/order/plan/list")
+    Call<List<PlanListResponse>> getPlanList(@Query("contractId") long contractId, @Query("status") String status,
+                                             @Query("beginDate") String beginDate, @Query("endDate") String endDate,
+                                             @Query("page") Integer page, @Query("pageSize") Integer pageSize);
+
+
+    @Headers({ApiConstants.HEADER_CONTENT_TYPE_JSON, ApiConstants.ENDPOINT_HEADER_API_KEY})
+    @GET("/v1/swaps/ledger/list")
+    Call<List<LedgerResponse>> getLedgerList(@Query("contractId") Long contractId, @Query("action") Integer action,
+                                             @Query("startDate") String startDate, @Query("endDate") String endDate,
+                                             @Query("curPage") Integer curPage, @Query("pageSize") Integer pageSize);
+
+    @FormUrlEncoded
+    @Headers(ApiConstants.ENDPOINT_HEADER_API_KEY)
+    @POST("/v1/swaps/position/margin/add")
+    Call<JSONObject> addPositionMargin(@Field("contractId") long contractId, @Field("addValue") BigDecimal addValue);
+}
